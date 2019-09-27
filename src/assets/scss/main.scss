@@ -1,0 +1,448 @@
+body {
+    background-color: #fff;
+    font-family: 'Raleway' !important;
+}
+
+/* Menú flotante */
+.left-content {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    top: 30px;
+    left: 150px;
+    z-index: 999999;
+}
+.left-content > div > img {
+    width: 200px;
+}
+.button-collapse {
+    position: fixed !important;
+    background-color: #33373d !important;
+    z-index: 55555 !important;
+    top: 10px;
+    left: 10px;
+}
+.side-nav {
+    width: 165px !important;
+}
+/* -------------- */
+
+/* Navbar de navegación */
+.nav-wrapper {
+    margin-top: -21px;
+    width: 100%;
+}
+
+.nav-wrapper > ul {
+    width: 100%;
+}
+
+.nav-wrapper > ul > li, .side-nav > ul > li {
+    padding: 20px;
+    background-color: #33373d;
+    cursor: pointer;
+    height: 50px;
+    line-height: 10px;
+}
+
+.active {
+    background-color: #2098D1;
+}
+
+.nav-wrapper > ul > li > a, .side-nav > ul > li > a {
+    font-size: 13px;
+    float: left;
+    color: #ffffff;
+}
+
+.social {
+    padding: 0px 10px;
+    margin-top: -15px;
+}
+.social > ul {
+    display: -webkit-inline-box;
+    width: 100%;
+    margin-left: 36px;
+}
+
+.social > ul > li {
+    padding: 0px 10px;
+}
+
+.github, .linkedin, .google {
+    color: #33373d;
+}
+
+.linkedin:hover {
+    color: #007ab5;
+}
+
+.github:hover {
+    color: black;
+}
+
+.google:hover {
+    color: #e14c3a;
+}
+
+/* -------------- */
+
+/*Div que contiene toda la información del CV*/
+
+.right-content {
+    padding-left: 300px;
+}
+
+.main-content {
+    padding: 0px !important;
+}
+
+/*-----------------Secciones---------------*/
+/* ¡Empecemos! */
+.parallax-container {
+    height: 100vh !important;
+    background-size: cover;
+    box-shadow: inset 0 0 0 20000px rgba(36, 70, 105, 0.74)
+}
+
+.info-personal {
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.name > strong {
+    font-weight: 600; 
+}
+
+.profession {
+    color: #caa669;
+}
+
+/* ************ */
+
+/* Sobre mi */
+.about-me {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.sentence {
+    text-align: center;
+    color: #2098d1;
+    font-size: 15px;
+    font-weight: 600;
+}
+.sentence > i {
+    color: #33373d !important;
+}
+/* ************ */
+
+/* Información */
+/* Experiencia laboral */
+.information {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(204, 204, 204, 0.13);
+}
+.content-job {
+    text-align: justify;
+}
+
+/** --- Timeline -- */
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  padding: 150px 0px;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 5px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #2098D1;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: white;
+  background: #2098d1;
+  height: 115px;
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: #2098d1 transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent #2098d1;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/** --------- */
+
+/** Tecnologias */
+.tbody > tr > td {
+    padding: 0px !important;
+}
+.tbody > tr > td:first-child {
+    width: 150px !important;
+}
+.progress {
+    height: 5px !important;
+    background-color: #ffffff !important;
+    border-radius: 2px;
+    border: 1px solid #2098d1;
+}
+.determinate {
+    background-color: #2098d1 !important;
+}
+.title-technologies {
+     margin-left: 10px;
+     font-weight: 700;
+     margin: 0px 0px 20px 10px;
+}
+/* ************ */
+
+/* Portfolio */
+.portfolio {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #2098D1;
+}
+.title-portfolio {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.img-card {
+    border-bottom: 1px solid #e0e0e0;
+}
+/* ************ */
+
+/* Hobbies */
+.hobbies {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hobbies > .container > .row > .col {
+    padding: 15px ;
+    text-align: center;
+}
+.title-hobbies {
+    margin-bottom: 35px;
+}
+/* ************ */
+
+
+/*Progress bar*/
+.progress-container {
+    left: 0;
+    width: 100%;
+    height: 0.4em;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    content: "";
+    display: table;
+    table-layout: fixed;
+    z-index: 999999;
+}
+
+.progress-bar {
+    width: 0%;
+    float: left;
+    height: 100%;
+    z-index: 99;
+    max-width: 100%;
+    background-color: #62a420;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+
+/** ************** */
+
+
+/** Footer **/
+.page-footer {
+    padding-top: 0px !important;
+    background-color: #1976d2 !important;
+}
+
+
+
+/** ------ CSS RESPONSIVE --------- */
+@media(max-width: 1750px) {
+    /** Timeline (educación) */
+    .timeline ol,
+    .timeline ol li {
+        width: auto; 
+    }
+    
+    .timeline ol {
+        padding: 0;
+        transform: none !important;
+    }
+    
+    .timeline ol li {
+        display: block;
+        height: auto;
+        background: transparent;
+    }
+    
+    .timeline ol li:first-child {
+        margin-top: 25px;
+    }
+    
+    .timeline ol li:not(:first-child) {
+        margin-left: auto;
+    }
+    
+    .timeline ol li div {
+        width: 94%;
+        height: auto !important;
+        margin: 0 auto 25px;
+    }
+    
+    .timeline ol li div {
+        position: static;
+    }
+    
+    .timeline ol li:nth-child(odd) div {
+        transform: none;
+    }
+    
+    .timeline ol li:nth-child(odd) div::before,
+    .timeline ol li:nth-child(even) div::before {
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: none;
+        border-left: 1px solid white;
+        height: 25px;
+    }
+    
+    .timeline ol li:last-child,
+    .timeline ol li:nth-last-child(2) div::before,
+    .timeline ol li:not(:last-child)::after,
+    .timeline .arrows {
+        display: none;
+    }
+    /** ------------------- */
+}
+
+@media(max-width:1200px) {
+    .left-content {
+        display: none;
+    }
+    .right-content {
+        padding-left: 0px;
+    }
+    .info-personal {
+        left: 4%;
+    }
+    /** Menú de redes sociales */
+    .social {
+        padding: 0px 10px;
+        margin-top: 0px;
+    }
+    .social > ul {
+        display: -webkit-inline-box;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .social > ul > li {
+        padding: 0px 0px;
+        width: 40px;
+    }
+    .overlay {
+        width: 240px !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    .image-company {
+        display: none;
+    }
+}
+
+@media(min-width:1201px) {
+    .slide-out, .button-collapse {
+        display: none !important;
+    }
+}
+
+/** Clases utiles utilizada para varios elementos */
+.font-weight {
+    font-weight: 700
+}
+
+.font-size {
+    font-size: 13px;
+}
