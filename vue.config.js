@@ -12,8 +12,9 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `
-            @import "@/assets/scss/icons.scss";
-            @import "@/assets/scss/hover.scss";
+            @import "@/assets/scss/common/_icons.scss";
+            @import "@/assets/scss/common/_hover.scss";
+            @import "@/assets/scss/common/_mixins.scss";
           `
       }
     }
@@ -36,5 +37,7 @@ module.exports = {
     config.module.rule('eslint')
       .use('eslint-loader')
       .options({ fix: true })
-  }
+  },
+
+  lintOnSave: true
 }

@@ -1,0 +1,101 @@
+/**
+This mixin takes two arguments that you need to define when 
+you call it with the @include rule. The first is the name of 
+the CSS property, and the second is its value.
+*/
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+ }
+
+/** 
+The following mixin contains all the CSS declarations
+you need to vertically position any HTML element you want.
+*/
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+ }
+
+/*
+The following keyframes mixin makes use of the @content 
+directive that allows you to pass a bunch of CSS rules 
+to the mixin.
+*/
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    }
+ }
+ 
+/*
+It allows you to quickly specify values for the four directions:
+top, right, bottom, and left.
+*/
+@mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute; 
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+ }
+
+
+/**
+You can use the following mixin with three breakpoints:
+tablet, desktop, and large. There’s no breakpoint for mobile
+because that’s the size you design for by default.
+*/
+$breakpoints: (
+    "phone-small": 360px,
+    "phone": 400px,
+    "phone-wide": 480px,
+    "phablet": 560px,
+    "tablet-small": 640px,
+    "tablet": 768px,
+    "mtablet" : 896px,
+    "tablet-wide": 1024px,
+    "desktop": 1248px,
+    "desktop-wide": 1440px,
+    "extra-deskpot-wide": 1500px
+);
+
+@mixin mq($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+                @content;
+            }
+    }
+}
+
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem
+};
+
+/**
+It performs truncation on any text that overflows its containing
+element and adds an ellipsis (…) to the end.
+*/
+@mixin text-shorten {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

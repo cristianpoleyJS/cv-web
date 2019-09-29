@@ -1,6 +1,6 @@
 <template>
     <section class="about-me">
-        <h5>Sobre mí</h5>
+        <h5 class="title">Sobre mí</h5>
         <div>
             <p>Siempre me ha gustado la tecnología, y siempre tuve curiosidad de saber cómo funcionan las cosas (un ordenador, un programa, internet, etc.). Además, siempre me atrajo la idea de crear algo que la gente pudiera utilizar y le pudiese ser de ayuda. Por ello, decidí ser <span class="font-weight">Ingeniero Informático</span>.</p>
             <p>Respecto a mis planes de futuro y de carrera, podría dividirlos en corto y medio plazo:</p>

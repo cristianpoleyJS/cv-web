@@ -1,19 +1,20 @@
 {
     "components": {
         "about_me": {
-
         },
         "contact": {
 
         },
         "footer_app": {
-
+            "design_for": "Diseñado y desarrollado por <strong>Cristian Poley</strong>"
         },
         "hobbies": {
 
         },
         "intro": {
-            
+            "hi": "¡Hola! Me llamo <strong>Cristian Poley</strong>",
+            "profession": "Ingeniero Informático - Front-end Developer",
+            "download_pdf": "Descarga mi CV"
         },
         "jobs": {
 
@@ -25,7 +26,12 @@
 
         },
         "sidebar": {
-
+            "start": "¡Hola!",
+            "about_me": "Sobre mí",
+            "information": "Información",
+            "projects": "Proyectos",
+            "hobbies": "Hobbies",
+            "contact": "Contacta"
         },
         "studies": {
 

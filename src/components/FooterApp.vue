@@ -1,13 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="footer-copyright">
-            <div class="container center-align">
-            Diseñado y desarrollado por <strong>Cristian Poley</strong>
-            <a class="grey-text text-lighten-4 right" id="go-start-footer" style="cursor:pointer;">
-                arriba
-            </a>
-            </div>
-        </div>
+        <span class="footer__design-for" v-html="$t('components.footer_app.design_for')"/>
     </footer>
 </template>
 

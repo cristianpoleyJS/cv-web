@@ -1,8 +1,29 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- Cabecera -->
+    <HeaderApp/>
+
+    <transition>
+      <router-view/>
+    </transition>
+
+    <!-- Footer -->
+    <FooterApp/>
   </div>
 </template>
+<script>
+
+import HeaderApp from '@/components/HeaderApp'
+import FooterApp from '@/components/FooterApp'
+
+export default {
+  name: 'home',
+  components: {
+    HeaderApp,
+    FooterApp
+  }
+}
+</script>
 
 <style lang="scss">
 
