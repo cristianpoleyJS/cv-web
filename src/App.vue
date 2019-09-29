@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="content">
     <!-- Cabecera -->
     <HeaderApp/>
 
@@ -28,10 +28,18 @@ export default {
 <style lang="scss">
 
     * {
-      font-family: sans-serif;
+      font-family: "Open Sans", sans-serif;
     }
 
     body {
       margin: 0;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .content {
+      position: relative;
     }
 </style>

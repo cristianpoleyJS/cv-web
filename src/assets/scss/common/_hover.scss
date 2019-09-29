@@ -1,3 +1,7 @@
+@import "./_palette.scss";
+
+
+
 .hover-to-right {
   -webkit-transition-property: color;
   vertical-align: middle;
@@ -12,7 +16,7 @@
 
 .hover-to-right:before {
   content: "";
-  background: #2098D1;
+  background: $secondBgColor;
   position: absolute;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
@@ -31,7 +35,7 @@
   bottom: 0;
 }
 .hover-to-right:hover, .hover-to-right:focus, .hover-to-right:active {
-  color: white;
+  color: #fff;
 }
 .hover-to-right:hover:before, .hover-to-right:focus:before, .hover-to-right:active:before {
   -webkit-transform: scaleX(1);
