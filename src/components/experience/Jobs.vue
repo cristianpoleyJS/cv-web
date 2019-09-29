@@ -1,19 +1,20 @@
 <template>
-    <section class="information">
-        <h6 class="font-weight">Experiencia laboral</h6>
-            <div class="job" v-for="job in jobs" :key="job.company">
-                <div class="row">
-                    <div class="col l9 m12 s12">
-                        <span class="font-weight">{{ job.company }}</span><br>
-                        <span>{{ job.location }}</span>
-                        <p class="content-job">{{ job.description }}</p>
-                    </div>
-                    <img class="col l3 image-company" v-if="job.company === 'S|ngular'" src="../../assets/images/jobs/sngular-logo.jpg">
-                    <img class="col l3 image-company" v-else-if="job.company === 'Ingeniova Systems'" src="../../assets/images/jobs/ingeniova-logo.png">
-                    <img class="col l3 image-company" v-else-if="job.company === 'Wellness Telecom'" src="../../assets/images/jobs/wellness-logo.jpg">
-                    <img class="col l3 image-company" v-else-if="job.company === 'Sopra'" src="../../assets/images/jobs/sopra-logo.jpg">
-                </div>
+    <section class="jobs">
+        <span class="jobs__title">Experiencia laboral</span>
+        <div class="jobs__container">
+            <div class="jobs__job" v-for="job in jobs" :key="job.company" :style="retunImageBackground(job.company)">
+            <!-- <img class="jobs__job--image-company" v-if="job.company === 'S|ngular'" src="../../assets/images/jobs/sngular-logo.jpg">
+            <img class="jobs__job--image-company" v-else-if="job.company === 'Ingeniova Systems'" src="../../assets/images/jobs/ingeniova-logo.png">
+            <img class="jobs__job--image-company" v-else-if="job.company === 'Wellness Telecom'" src="../../assets/images/jobs/wellness-logo.jpg">
+            <img class="jobs__job--image-company" v-else-if="job.company === 'Sopra'" src="../../assets/images/jobs/sopra-logo.jpg"> -->
+
+            <div class="jobs__job__container">
+                <span class="jobs__job__container--title">{{ job.company }}</span><br>
+                <span class="jobs__job__container--location">{{ job.location }}</span>
+                <p class="jobs__job__container--description">{{ job.description }}</p>
             </div>
+        </div>
+        </div>
     </section>
 </template>
 
@@ -45,109 +46,61 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+
+    retunImageBackground (company) {
+      let urlImage
+      switch (company) {
+        case 'Ingeniova Systems':
+          urlImage = '../../assets/images/jobs/ingeniova-logo.png'
+          break
+        case 'Wellness Telecom':
+          urlImage = '../../assets/images/jobs/wellness-logo.jpg'
+          break
+        case 'Sopra':
+          urlImage = '../../assets/images/jobs/sopra-logo.jpg'
+          break
+        default:
+          urlImage = '../../assets/images/jobs/sngular-logo.jpg'
+          break
+      }
+      return `background-image: url(${urlImage})`
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
-    .information {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: rgba(204, 204, 204, 0.13);
-    }
-    .content-job {
-        text-align: justify;
+
+    .jobs {
+
+        padding: 6rem 1.5rem;
+        background-color: $bgBlack;
+        max-width: rem(1440);
+        color: $secondFontColor;
+
+        &__container {
+
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        &__job {
+            flex: 0 0 35%;
+            background-size: cover;
+            width: 400px;
+            height: 300px;
+            position: relative;
+
+            &--image-company {
+
+                max-width: 300px;
+            }
+        }
     }
 
-    /** --- Timeline -- */
-    .timeline {
-        white-space: nowrap;
-        overflow-x: hidden;
-    }
-
-    .timeline ol {
-        font-size: 0;
-        padding: 150px 0px;
-        transition: all 1s;
-    }
-
-    .timeline ol li {
-        position: relative;
-        display: inline-block;
-        list-style-type: none;
-        width: 160px;
-        height: 5px;
-        background: #2098d1;
-    }
-
-    .timeline ol li:last-child {
-        width: 280px;
-    }
-
-    .timeline ol li:not(:first-child) {
-        margin-left: 14px;
-    }
-
-    .timeline ol li:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: calc(100% + 1px);
-        bottom: 0;
-        width: 12px;
-        height: 12px;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        background: #2098d1;
-    }
-
-    .timeline ol li div {
-        position: absolute;
-        left: calc(100% + 7px);
-        width: 280px;
-        padding: 15px;
-        font-size: 1rem;
-        white-space: normal;
-        color: white;
-        background: #2098d1;
-        height: 115px;
-    }
-
-    .timeline ol li div::before {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-    }
-
-    .timeline ol li:nth-child(odd) div {
-        top: -16px;
-        transform: translateY(-100%);
-    }
-
-    .timeline ol li:nth-child(odd) div::before {
-        top: 100%;
-        border-width: 8px 8px 0 0;
-        border-color: #2098d1 transparent transparent transparent;
-    }
-
-    .timeline ol li:nth-child(even) div {
-        top: calc(100% + 16px);
-    }
-
-    .timeline ol li:nth-child(even) div::before {
-        top: -8px;
-        border-width: 8px 0 0 8px;
-        border-color: transparent transparent transparent #2098d1;
-    }
-
-    .timeline time {
-        display: block;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
 </style>

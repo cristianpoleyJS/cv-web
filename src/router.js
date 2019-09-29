@@ -23,14 +23,14 @@ export default new Router({
         title: 'CV Cristian Poley - Experience'
       }
     },
-    {
-      path: '/more-me',
-      name: 'MoreMe',
-      component: () => import(/* webpackChunkName: "moreme" */ './views/MoreMe.vue'),
-      meta: {
-        title: 'CV Cristian Poley - More Me'
-      }
-    },
+    // {
+    //   path: '/more-me',
+    //   name: 'MoreMe',
+    //   component: () => import(/* webpackChunkName: "moreme" */ './views/MoreMe.vue'),
+    //   meta: {
+    //     title: 'CV Cristian Poley - More Me'
+    //   }
+    // },
     {
       path: '/portfolio',
       name: 'Portfolio',

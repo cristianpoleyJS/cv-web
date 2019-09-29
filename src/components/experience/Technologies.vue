@@ -1,48 +1,29 @@
 <template>
     <section class="technologies">
-            <div class="row">
-                <!-- Tecnologías -->
-                <h6 class="title-technologies">Tecnologías</h6>
-                <div class="col m6 s12">
-                    <div class="technologies">
-                        <div class="frontend">
-                            <table class="table-technologies-frontend">
-                                <tbody class="tbody">
-                                    <tr v-for="tech in technologies" :key="tech.name">
-                                        <td>
-                                            <span>{{ tech.name }}</span>
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="determinate" :style="`width: ${tech.level}%`"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col m6 s12">
-                    <div class="others">
-                        <table class="table-technologies-others">
-                            <tbody class="tbody">
-                                <tr v-for="other in othersTechs" :key="other.name">
-                                    <td>
-                                        <span>{{ other.name }}</span>
-                                    </td>
-                                    <td>
-                                        <div class="progress">
-                                            <div class="determinate" :style="`width: ${other.level}%`"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- -->
+        <span class="technologies__title">Tecnologías</span>
+
+      <div class="technologies__wrapper">
+      <div class="technologies__wrapper__frontend">
+        <template v-for="tech in technologies">
+          <div class="skill" :key="tech.name">
+            <span class="skill__name">{{ tech.name }}</span>
+            <div class="skill__progress-bar-container" >
+                <div class="skill__progress-bar-value" :style="`width: ${tech.level}%;`"></div>
             </div>
+          </div>
+        </template>
+      </div>
+          <div class="technologies__wrapper__others">
+        <template v-for="other in othersTechs">
+          <div class="skill" :key="other.name">
+            <span class="skill__name">{{ other.name }}</span>
+            <div class="skill__progress-bar-container" >
+                <div class="skill__progress-bar-value" :style="`width: ${other.level}%;`"></div>
+            </div>
+          </div>
+        </template>
+        </div>
+        </div>
     </section>
 </template>
 
@@ -160,6 +141,45 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
+  .technologies {
+    padding: 2rem 4rem;
+
+    &__wrapper {
+
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__frontend {
+        flex: 0 0 45%;
+      }
+      &__others {
+        flex: 0 0 45%;
+      }
+    }
+  }
+
+  .skill {
+
+    margin-bottom: 0.5rem;
+
+    &__name {
+      font-weight: 400;
+      color: $primaryFontColor;
+    }
+
+    &__progress-bar-container {
+      border: 1px solid $bgGray;
+      border-radius: rem(20);
+    }
+
+    &__progress-bar-value {
+      background-color: $primaryColor;
+      height: rem(8);
+      border-radius: rem(20);
+    }
+  }
 </style>

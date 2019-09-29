@@ -38,7 +38,6 @@ export default {
             position: absolute;
             top: 30%;
             width: 100%;
-            margin: 0 auto;
             padding-left: 1.5rem;
 
             &--name {

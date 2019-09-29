@@ -1,5 +1,6 @@
 <template>
     <header class="header">
+
         <img class="header__icon" src="../assets/images/icons/ico-cp.svg"/>
 
         <ul class="header__navigation">
@@ -18,11 +19,11 @@
                     Portfolio
                 </router-link>
             </li>
-            <li>
+            <!-- <li>
                 <router-link :to="'/more-me'" class="hover-to-right">
                     More me
                 </router-link>
-            </li>
+            </li> -->
         </ul>
     </header>
 </template>
@@ -54,9 +55,12 @@ export default {
         &__navigation {
             display: inline-flex;
             list-style: none;
+            margin-right: 1rem;
+            background-color: $primaryFontColor;
+            padding: 1rem;
 
             > li > a {
-                color: white;
+                color: #fff;
                 text-decoration: none;
                 margin-right: 1rem;
             }
