@@ -1,0 +1,21 @@
+@import "./_palette.scss";
+@import "./_mixins.scss";
+
+.link-app {
+    color: $secondFontColor;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $hoverLinkColor;
+    }
+}
+
+.about-me, .jobs, .technologies, .projects, .hobbies, .contact {
+
+    &__title {
+        font-size: rem(40);
+        font-family: Anton;
+    }
+}

@@ -1,5 +1,9 @@
 # cv-web
 
+This project was developed by Cristian Poley.
+
+It is the code for www.cristianpoley.com.
+
 ## Project setup
 ```
 npm install
