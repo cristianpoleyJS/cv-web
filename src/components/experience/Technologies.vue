@@ -145,6 +145,8 @@ export default {
 
   .technologies {
     padding: 2rem 4rem;
+    max-width: rem(1440);
+    margin: 0 auto;
 
     &__wrapper {
 
@@ -172,7 +174,7 @@ export default {
     }
 
     &__progress-bar-container {
-      border: 1px solid $bgGray;
+      border: 1px solid #cdcdcd;
       border-radius: rem(20);
     }
 
@@ -180,6 +182,7 @@ export default {
       background-color: $primaryColor;
       height: rem(8);
       border-radius: rem(20);
+      margin: -1px;
     }
   }
 </style>

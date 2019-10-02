@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="content">
-    <strong style="text-align:center; font-size: 2rem;display:block;">WORKING PAGE IN PROGRESS</strong>
 
     <!-- Cabecera -->
     <HeaderApp/>

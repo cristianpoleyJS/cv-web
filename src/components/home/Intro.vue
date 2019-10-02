@@ -23,13 +23,13 @@ export default {
 <style scoped lang="scss">
 
     .intro {
-        background: url('../../assets/images/background.jpg');
+        background: url('../../assets/images/background.png');
         background-size: cover;
         display: block;
         height: 95vh;
-        box-shadow: inset 0 0 0 20000px #33373db3;
+        box-shadow: inset 30px -40px 20px 0px #25292c;
+        background-color: #24292c;
         position: relative;
-        z-index: -1;
 
         &__info-personal {
             color: $primaryColor;

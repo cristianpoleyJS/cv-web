@@ -2,18 +2,23 @@
     <section class="jobs">
         <span class="jobs__title">Experiencia laboral</span>
         <div class="jobs__container">
-            <div class="jobs__job" v-for="job in jobs" :key="job.company" :style="retunImageBackground(job.company)">
-            <!-- <img class="jobs__job--image-company" v-if="job.company === 'S|ngular'" src="../../assets/images/jobs/sngular-logo.jpg">
-            <img class="jobs__job--image-company" v-else-if="job.company === 'Ingeniova Systems'" src="../../assets/images/jobs/ingeniova-logo.png">
-            <img class="jobs__job--image-company" v-else-if="job.company === 'Wellness Telecom'" src="../../assets/images/jobs/wellness-logo.jpg">
-            <img class="jobs__job--image-company" v-else-if="job.company === 'Sopra'" src="../../assets/images/jobs/sopra-logo.jpg"> -->
+            <div
+              class="jobs__job"
+              v-for="job in jobs"
+              :key="job.company"
+              :class="{
+                'jobs__job--sngular': job.company === 'S|ngular',
+                'jobs__job--ingeniova': job.company === 'Ingeniova Systems',
+                'jobs__job--wellness': job.company === 'Wellness Telecom',
+                'jobs__job--sopra': job.company === 'Sopra',
+              }">
 
-            <div class="jobs__job__container">
-                <span class="jobs__job__container--title">{{ job.company }}</span><br>
-                <span class="jobs__job__container--location">{{ job.location }}</span>
-                <p class="jobs__job__container--description">{{ job.description }}</p>
-            </div>
-        </div>
+              <div class="jobs__job__container">
+                  <span class="jobs__job__container--title">{{ job.company }}</span><br>
+                  <span class="jobs__job__container--location">{{ job.location }}</span>
+                  <p class="jobs__job__container--description">{{ job.description }}</p>
+              </div>
+          </div>
         </div>
     </section>
 </template>
@@ -27,12 +32,12 @@ export default {
         {
           company: 'S|ngular',
           location: 'May 2018 - Actualidad (Madrid)',
-          description: 'Desarrollador Frontend para un proyecto en BBVA utilizando como principal tecnología Vue.js y utlizando como plataforma Google Cloud Platform.'
+          description: 'Desarrollador Frontend para un proyecto en BBVA utilizando como principal tecnología Vue.js y Firebase, utlizando como plataforma Google Cloud Platform.'
         },
         {
           company: 'Ingeniova Systems',
           location: 'Feb 2017 - May 2018 (Sevilla)',
-          description: 'Como principal desarrollador Frontend de la compañía, me he encargado del diseño, accesibilidad y usabilidad de las aplicaciones web con una tecnología nueva y potente como es Angular 2 y versiones superiores, analizando y estudiando siempre los requisitos del cliente, aplicando siempre clean code y buenas prácticas. También he trabajado puntualmente con la parte Backend en algunas aplicaciones, usando Node.js y Microservicios. Además, también he sido el responsable de la gestión de todas las páginas web corporativas de nuestro principal cliente, webs desarrolladas con Orchard, PHP y Javascript.'
+          description: 'Como principal desarrollador Frontend de la compañía, me encargué del diseño, accesibilidad y usabilidad de las aplicaciones web con el framework Angular 2/4, analizando y estudiando siempre los requisitos del cliente, aplicando clean code y buenas prácticas. También he trabajado puntualmente con la parte Backend en algunas aplicaciones, usando Node.js y Microservicios. Además, también he sido el responsable de la gestión de todas las páginas web corporativas del principal cliente, webs desarrolladas con Orchard, PHP y JavaScript Vanila.'
         },
         {
           company: 'Wellness Telecom',
@@ -46,27 +51,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-
-    retunImageBackground (company) {
-      let urlImage
-      switch (company) {
-        case 'Ingeniova Systems':
-          urlImage = '../../assets/images/jobs/ingeniova-logo.png'
-          break
-        case 'Wellness Telecom':
-          urlImage = '../../assets/images/jobs/wellness-logo.jpg'
-          break
-        case 'Sopra':
-          urlImage = '../../assets/images/jobs/sopra-logo.jpg'
-          break
-        default:
-          urlImage = '../../assets/images/jobs/sngular-logo.jpg'
-          break
-      }
-      return `background-image: url(${urlImage})`
-    }
   }
 }
 </script>
@@ -75,14 +59,14 @@ export default {
 
     .jobs {
 
+        margin: 0 auto;
         padding: 6rem 1.5rem;
-        background-color: $bgBlack;
         max-width: rem(1440);
         color: $secondFontColor;
 
         &__container {
 
-            margin-top: 2rem;
+            margin-top: 3rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -90,15 +74,40 @@ export default {
         }
 
         &__job {
-            flex: 0 0 35%;
+            background-repeat: no-repeat;
             background-size: cover;
-            width: 400px;
-            height: 300px;
+            width: rem(400);
             position: relative;
+            margin: 1rem 0;
+            min-height: rem(300);
 
+            &--sngular {
+              background-image: url('../../assets/images/jobs/sngular-logo.jpg');
+            }
+            &--ingeniova {
+              background-image: url('../../assets/images/jobs/ingeniova-logo.png');
+            }
+            &--wellness {
+              background-image: url('../../assets/images/jobs/wellness-logo.jpg');
+            }
+            &--sopra {
+              background-image: url('../../assets/images/jobs/sopra-logo.jpg');
+            }
             &--image-company {
 
                 max-width: 300px;
+            }
+
+            &__container {
+              display: none;
+            }
+
+            &:hover {
+            opacity: 0.1;
+
+              &__container {
+                display: block;
+              }
             }
         }
     }

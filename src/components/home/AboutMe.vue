@@ -38,7 +38,6 @@ export default {
         padding: 1rem 2rem 5rem;
         color: #fff;
         background: rgb(37, 41, 44);
-        box-shadow: 1px -40px 47px 35px rgb(37, 41, 44);
 
         &__desires {
             margin-top: 1rem;
@@ -58,9 +57,16 @@ export default {
                 }
 
                 > p {
-                    text-align: justify;
+                    text-align: left;
+                }
+
+                @include mq('tablet') {
+                    flex: 1 0 100%;
+
+                    margin-bottom: 1rem;
                 }
             }
+
         }
     }
 </style>

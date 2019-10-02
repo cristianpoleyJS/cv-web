@@ -3,10 +3,14 @@
     <section class="experience">
 
         <!-- Sección 'Trabajos' -->
-        <Jobs/>
+        <div class="jobs">
+          <Jobs/>
+        </div>
 
         <!-- Skills -->
-        <Technologies/>
+        <div class="skills">
+          <Technologies/>
+        </div>
 
     </section>
   </transition>
@@ -24,3 +28,16 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+
+  .experience {
+
+    .jobs {
+      background-color: $bgBlack;
+    }
+    .skills {
+      background-color: #fff;
+    }
+  }
+</style>

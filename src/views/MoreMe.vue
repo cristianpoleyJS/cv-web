@@ -2,10 +2,14 @@
     <section class="more-me">
 
         <!-- Hobbies -->
-        <Hobbies />
+        <div class="hobbies">
+          <Hobbies/>
+        </div>
 
         <!-- Contactar -->
-        <Contact/>
+        <div class="contact">
+          <Contact/>
+        </div>
 
     </section>
 </template>
@@ -22,3 +26,16 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+
+  .more-me {
+
+    .hobbies {
+      background-color: #fff;
+    }
+    .contact {
+      // background-color: $bgBlack;
+    }
+  }
+</style>

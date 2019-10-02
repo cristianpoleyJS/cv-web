@@ -19,11 +19,11 @@
                     Portfolio
                 </router-link>
             </li>
-            <!-- <li>
+            <li>
                 <router-link :to="'/more-me'" class="hover-to-right">
                     More me
                 </router-link>
-            </li> -->
+            </li>
         </ul>
     </header>
 </template>
@@ -55,7 +55,7 @@ export default {
         &__navigation {
             display: inline-flex;
             list-style: none;
-            margin-right: 1rem;
+            margin: 0 1rem;
             background-color: $primaryFontColor;
             padding: 1rem;
 
