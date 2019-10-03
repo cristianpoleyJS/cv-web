@@ -34,6 +34,7 @@ export default {
             position: absolute;
             top: 30%;
             width: 100%;
+            margin-left: 1.5rem;
 
             &--name {
                 margin: 0;

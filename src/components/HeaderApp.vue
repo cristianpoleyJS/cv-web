@@ -46,6 +46,7 @@ export default {
         width: 100%;
         padding-top: 1rem;
         height: rem(56);
+        padding-left: 1.5rem;
 
         &__icon {
             width: 3.5rem;

@@ -41,7 +41,7 @@ export default {
         {
           name: 'Vue.js',
           id: 'vue',
-          level: 90
+          level: 85
         },
         {
           name: 'Angular 4',
@@ -203,7 +203,7 @@ export default {
     &__progress-bar-container {
       border: 1px solid #cdcdcd;
       border-radius: rem(20);
-
+      transition: all 0.3s;
     }
     &__icon {
       display: inline-block;
@@ -228,9 +228,6 @@ export default {
       &.firebase {
         background-image: url('../../assets/images/technologies/firebase.png');
       }
-      // &.vuex {
-      //   background-image: url('../../assets/images/technologies/vuex.svg');
-      // }
       &.ngrx {
         background-image: url('../../assets/images/technologies/ngrx.svg');
       }
@@ -270,9 +267,6 @@ export default {
       &.github {
         background-image: url('../../assets/images/technologies/github.svg');
       }
-      // &.gitflow {
-      //   background-image: url('../../assets/images/technologies/gitflow.svg');
-      // }
       &.docker {
         background-image: url('../../assets/images/technologies/docker.png');
       }
@@ -292,6 +286,11 @@ export default {
       height: rem(8);
       border-radius: rem(20);
       margin: -1px;
+  -moz-transition: all 1s ease;
+  -moz-transition-delay: 1s;
+  -webkit-transition: all 1s ease;
+  -webkit-transition-delay: 1s;
+  transition: all 1s ease;
     }
   }
 </style>

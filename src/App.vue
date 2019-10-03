@@ -24,6 +24,12 @@ export default {
   components: {
     HeaderApp,
     FooterApp
+  },
+  watch: {
+
+    '$route' () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
   }
 }
 </script>
