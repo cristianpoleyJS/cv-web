@@ -1,6 +1,6 @@
 <template>
     <section class="projects container">
-        <span class="projects__title">Mis proyectos</span>
+        <span class="projects__title">{{ $t('components.projects.title') }}</span>
         <div class="projects__project" v-for="project in projects" :key="project.name">
             <img src="../../assets/images/projects/nexlu.png" v-if="project.name === 'Nexlu'" class="img-card">
             <img src="../../assets/images/projects/brisbox.png" v-else-if="project.name === 'Brisbox'" class="img-card">
@@ -18,11 +18,11 @@ export default {
       projects: [
         {
           name: 'Nexlu',
-          description: 'Red Social basada en videojuegos. Fue desarrollada bajo el framework Meteor.js y presentada como Trabajo Fin de Grado.'
+          description: this.$i18n.t('components.projects.nexlu')
         },
         {
           name: 'Brisbox',
-          description: 'Plataforma donde la gente puede encontrar a otras personas para ayudarles en sus mudanzas. Aplicación web desarrollada para una asignatura del grado donde se simulaba la creación y venta de un software, recreando así el comienzo de una StartUp. Realizada com el framework Meteor.js.'
+          description: this.$i18n.t('components.projects.brisbox')
         }
       ]
     }

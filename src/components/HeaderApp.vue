@@ -6,22 +6,22 @@
         <ul class="header__navigation">
             <li>
                 <router-link :to="'/home'" class="hover-to-right">
-                    Home
+                    {{ $t('components.header_app.home') }}
                 </router-link>
             </li>
             <li>
                 <router-link :to="'/experience'" class="hover-to-right">
-                    Experience
+                    {{ $t('components.header_app.experience') }}
                 </router-link>
             </li>
             <li>
                 <router-link :to="'/portfolio'" class="hover-to-right">
-                    Portfolio
+                    {{ $t('components.header_app.portfolio') }}
                 </router-link>
             </li>
             <li>
                 <router-link :to="'/more-me'" class="hover-to-right">
-                    More me
+                    {{ $t('components.header_app.more_me') }}
                 </router-link>
             </li>
         </ul>

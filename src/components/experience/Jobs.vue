@@ -1,6 +1,6 @@
 <template>
     <section class="jobs container">
-        <span class="jobs__title">Experiencia laboral</span>
+        <span class="jobs__title">{{ $t('components.jobs.title') }}</span>
 
         <div class="jobs__container">
           <div class="jobs__container__job" v-for="job in jobs" :key="job.company">
@@ -32,30 +32,26 @@ export default {
         {
           company: 'S|ngular',
           id: 'sngular',
-          location: 'May 2018 - Actualidad (Madrid)',
-          description:
-            'Desarrollador Frontend para un proyecto en BBVA utilizando como principal tecnología Vue.js y Firebase, utlizando como plataforma Google Cloud Platform.'
+          location: this.$i18n.t('components.jobs.location_sngular'),
+          description: this.$i18n.t('components.jobs.description_sngular')
         },
         {
           company: 'Ingeniova Systems',
           id: 'ingeniova',
-          location: 'Feb 2017 - May 2018 (Sevilla)',
-          description:
-            'Como principal desarrollador Frontend de la compañía, me encargué del diseño, accesibilidad y usabilidad de las aplicaciones web con el framework Angular 2/4, analizando y estudiando siempre los requisitos del cliente, aplicando clean code y buenas prácticas. También he trabajado puntualmente con la parte Backend en algunas aplicaciones, usando Node.js y Microservicios. Además, también he sido el responsable de la gestión de todas las páginas web corporativas del principal cliente, webs desarrolladas con Orchard, PHP y JavaScript Vanila.'
+          location: this.$i18n.t('components.jobs.location_ingeniova'),
+          description: this.$i18n.t('components.jobs.description_ingeniova')
         },
         {
           company: 'Wellness Telecom',
           id: 'wellness',
-          location: 'Oct 2016 - Dic 2016 (Sevilla)',
-          description:
-            'Mi papel en esta empresa IoT ha sido la de desarrollador productos y servicios de seguridad, especialmente de la etapa de recolección de información. He implementado colectores para comprobar la seguridad en redes siguiendo los controles definidos en la metodología de seguridad OWISAM con el lenguaje de programación Python y también he realizado una interfaz de usuario para una aplicación de iCirrus (un proyecto de EU Horizon 2020) con el framework de javascript Meteor.js.'
+          location: this.$i18n.t('components.jobs.location_wellness'),
+          description: this.$i18n.t('components.jobs.description_wellness')
         },
         {
           company: 'Sopra Steria',
           id: 'sopra',
-          location: 'Ene 2016 - Jul 2016 (Sevilla)',
-          description:
-            'He estado involucrado en tareas relacionadas con el Aseguramiento de la Calidad basado en la Metodología v3 y en procesos de testing desde los ciclos tempranos del desarrollo de aplicaciones, asegurando la calidad, homogeneidad y predictibilidad.'
+          location: this.$i18n.t('components.jobs.location_sopra'),
+          description: this.$i18n.t('components.jobs.description_sopra')
         }
       ]
     }

@@ -1,6 +1,6 @@
 <template>
     <section class="hobbies container">
-        <span class="hobbies__title">Hobbies</span>
+        <span class="hobbies__title">{{ $t('components.hobbies.title') }}</span>
 
         <div class="hobbies__container">
           <span>

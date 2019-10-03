@@ -1,6 +1,6 @@
 <template>
     <section class="technologies container">
-        <span class="technologies__title">Tecnologías</span>
+        <span class="technologies__title">{{ $t('components.technologies.title') }}</span>
 
       <div class="technologies__wrapper">
       <div class="technologies__wrapper__frontend">
