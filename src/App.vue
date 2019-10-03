@@ -4,7 +4,9 @@
     <!-- Cabecera -->
     <HeaderApp/>
 
-    <transition>
+      <transition
+        name="page"
+        mode="out-in">
       <router-view/>
     </transition>
 

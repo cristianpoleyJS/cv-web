@@ -69,16 +69,16 @@ export default {
             margin-top: 3rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
 
         }
 
         &__job {
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             width: rem(400);
             position: relative;
-            margin: 1rem 0;
+            margin: 1%;
             min-height: rem(300);
 
             &--sngular {

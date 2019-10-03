@@ -12,11 +12,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `
-            @import "@/assets/scss/common/_common.scss";
-            @import "@/assets/scss/common/_icons.scss";
-            @import "@/assets/scss/common/_hover.scss";
-            @import "@/assets/scss/common/_mixins.scss";
-            @import "@/assets/scss/common/_palette.scss";
+            @import "@/assets/scss/main.scss";
           `
       }
     }

@@ -37,14 +37,15 @@ export default {
 <style scoped lang="scss">
 
     .header {
-        position: absolute;
+        position: sticky;
         z-index: 999;
         background-color: transparent;
         top: 0;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 1rem 0;
+        padding-top: 1rem;
+        height: rem(56);
 
         &__icon {
             width: 3.5rem;

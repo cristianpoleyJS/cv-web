@@ -1,5 +1,4 @@
 <template>
-  <transition name="fade">
     <section class="experience">
 
         <!-- Sección 'Trabajos' -->
@@ -13,7 +12,6 @@
         </div>
 
     </section>
-  </transition>
 </template>
 
 <script>

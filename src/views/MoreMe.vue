@@ -35,7 +35,7 @@ export default {
       background-color: #fff;
     }
     .contact {
-      // background-color: $bgBlack;
+      background: $secondBgColor;
     }
   }
 </style>

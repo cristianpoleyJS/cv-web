@@ -40,9 +40,13 @@ export default {
         max-width: rem(1440);
         color: $secondFontColor;
 
+        &__title {
+            margin-bottom: 2rem;
+        }
+
         &__container {
             position: absolute;
-            margin: 130px 0px 0px 10px;
+            margin: rem(130) 0 0 rem(10);
             background-color: #33373d;
             padding: 10px;
             color: #fff;
