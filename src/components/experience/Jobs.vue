@@ -1,5 +1,5 @@
 <template>
-    <section class="jobs">
+    <section class="jobs container">
         <span class="jobs__title">Experiencia laboral</span>
 
         <div class="jobs__container">
@@ -65,9 +65,7 @@ export default {
 
 <style scoped lang="scss">
 .jobs {
-  margin: 0 auto;
   padding: 6rem 1.5rem;
-  max-width: rem(1440);
   color: $secondFontColor;
 
   &__container {

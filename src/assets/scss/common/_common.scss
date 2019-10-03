@@ -24,3 +24,8 @@
 .experience, .home, .more-me, .portfolio {
     margin-top: -72px;
 }
+
+.container {
+    max-width: rem(1440);
+    margin: 0 auto;
+}

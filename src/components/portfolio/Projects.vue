@@ -1,5 +1,5 @@
 <template>
-    <section class="projects">
+    <section class="projects container">
         <span class="projects__title">Mis proyectos</span>
         <div class="projects__project" v-for="project in projects" :key="project.name">
             <img src="../../assets/images/projects/nexlu.png" v-if="project.name === 'Nexlu'" class="img-card">

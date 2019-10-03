@@ -1,5 +1,5 @@
 <template>
-    <section class="intro">
+    <section class="intro container">
         <div class="intro__info-personal">
             <span class="intro__info-personal--name" v-html="$t('components.intro.hi')"/>
             <span class="intro__info-personal--profession">
@@ -23,12 +23,8 @@ export default {
 <style scoped lang="scss">
 
     .intro {
-        background: url('../../assets/images/background.png');
-        background-size: cover;
         display: block;
         height: 95vh;
-        box-shadow: inset 30px -40px 20px 0px #25292c;
-        background-color: #24292c;
         position: relative;
 
         &__info-personal {
@@ -38,7 +34,6 @@ export default {
             position: absolute;
             top: 30%;
             width: 100%;
-            padding-left: 1.5rem;
 
             &--name {
                 margin: 0;

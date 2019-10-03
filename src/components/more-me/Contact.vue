@@ -1,5 +1,5 @@
 <template>
-    <section class="contact">
+    <section class="contact container">
         <span class="contact__title">Contacta conmigo</span>
 
         <!-- Mapa -->
@@ -35,9 +35,7 @@ export default {
 
     .contact {
 
-        margin: 0 auto;
         padding: 1rem 1.5rem;
-        max-width: rem(1440);
         color: $secondFontColor;
 
         &__title {

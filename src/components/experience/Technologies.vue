@@ -1,5 +1,5 @@
 <template>
-    <section class="technologies">
+    <section class="technologies container">
         <span class="technologies__title">Tecnologías</span>
 
       <div class="technologies__wrapper">
@@ -165,8 +165,6 @@ export default {
 
   .technologies {
     padding: 2rem 4rem;
-    max-width: rem(1440);
-    margin: 0 auto;
 
     &__wrapper {
 

@@ -1,5 +1,5 @@
 <template>
-    <section class="about-me">
+    <section class="about-me container">
         <span class="about-me__title">Un poco sobre mí</span>
         <div class="about-me__desires">
             <div class="about-me__desires--question">
@@ -37,7 +37,6 @@ export default {
     .about-me {
         padding: 1rem 2rem 5rem;
         color: #fff;
-        background: rgb(37, 41, 44);
 
         &__desires {
             margin-top: 1rem;

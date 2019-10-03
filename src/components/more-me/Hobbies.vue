@@ -1,5 +1,5 @@
 <template>
-    <section class="hobbies">
+    <section class="hobbies container">
         <span class="hobbies__title">Hobbies</span>
 
         <div class="hobbies__container">
@@ -40,9 +40,7 @@ export default {
 <style scoped lang="scss">
   .hobbies {
 
-    margin: 0 auto;
     padding: 6rem 1.5rem;
-    max-width: rem(1440);
     color: $secondFontColor;
 
     &__title {

@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header container">
 
         <img class="header__icon" src="../assets/images/icons/ico-cp.svg"/>
 
@@ -50,7 +50,6 @@ export default {
         &__icon {
             width: 3.5rem;
             height: 3.5rem;
-            margin-left: 1rem;
         }
 
         &__navigation {
