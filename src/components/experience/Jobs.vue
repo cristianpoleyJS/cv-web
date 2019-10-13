@@ -1,7 +1,9 @@
 <template>
   <section class="jobs container">
+    <!-- Título de la sección -->
     <span class="jobs__title">{{ $t('components.jobs.title') }}</span>
 
+    <!-- Listado de los Trabajos -->
     <div class="jobs__container">
       <div
         v-for="job in jobs"
@@ -17,8 +19,11 @@
               'jobs__container__job__inner--sopra': job.id === 'sopra',
             }" />
           <div class="jobs__container__job__inner--back">
+            <!-- Compañía -->
             <span class="jobs__container__job__inner--back--title">{{ job.company }}</span><br>
+            <!-- Ubicación -->
             <span class="jobs__container__job__inner--back--location">{{ job.location }}</span>
+            <!-- Descripción de tareas hechas -->
             <p class="jobs__container__job__inner--back--description">
               {{ job.description }}
             </p>

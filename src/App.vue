@@ -28,6 +28,10 @@ export default {
   },
   watch: {
 
+    /**
+     * Watch para que cada vez que cambie de ruta, se
+     * haga un efecto de scroll dinámico hacia la parte superior de la web.
+     */
     '$route' () {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }

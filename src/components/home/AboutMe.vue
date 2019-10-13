@@ -1,6 +1,9 @@
 <template>
   <section class="about-me container">
+    <!-- Título de la sección -->
     <span class="about-me__title">{{ $t('components.about_me.title') }}</span>
+
+    <!-- Preguntas y respuestas -->
     <div class="about-me__desires">
       <div class="about-me__desires--question">
         <span>{{ $t('components.about_me.question1_title') }}</span>

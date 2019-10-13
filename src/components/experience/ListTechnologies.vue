@@ -1,10 +1,13 @@
 <template>
   <section class="technologies container">
+    <!-- Título de la sección -->
     <span class="technologies__title">{{ $t('components.technologies.title') }}</span>
 
+    <!-- Listado de las tecnologías -->
     <div class="technologies__wrapper">
       <div class="technologies__wrapper__frontend">
         <template v-for="tech in technologies">
+          <!-- Nombre de la tecnología y además el porcentaje de conocimiento -->
           <div
             :key="tech.name"
             class="skill">
@@ -19,6 +22,8 @@
           </div>
         </template>
       </div>
+
+      <!-- Listado de tecnologías/metodologías/herramientas de NO desarrollo. -->
       <div class="technologies__wrapper__others">
         <template v-for="other in othersTechs">
           <div

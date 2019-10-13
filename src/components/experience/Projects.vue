@@ -1,6 +1,8 @@
 <template>
   <section class="projects container">
+    <!-- Título de la sección -->
     <span class="projects__title">{{ $t('components.projects.title') }}</span>
+    <!-- Listado de los proyectos -->
     <div class="projects__wrapper">
       <div
         v-for="project in projects"

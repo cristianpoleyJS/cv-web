@@ -1,5 +1,6 @@
 <template>
   <section class="contact container">
+    <!-- Título de la sección -->
     <span class="contact__title">{{ $t('components.contact.title') }}</span>
 
     <!-- Mapa -->

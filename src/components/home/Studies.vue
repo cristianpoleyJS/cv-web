@@ -1,6 +1,9 @@
 <template>
   <section class="studies container">
+    <!-- Título de la sección -->
     <span class="studies__title">{{ $t('components.studies.title') }}</span>
+
+    <!-- Listado de los estudios y cursos realizados por el momento -->
     <div class="studies__list">
       <template v-for="(study, index) in studies">
         <div
@@ -58,6 +61,11 @@ export default {
   },
   methods: {
 
+    /**
+     * Abre en una nueva pestaña del navegador, el certificado del
+     * curso clicado.
+     * @param {String} link Enlace al certificado.
+     */
     goTo (link) {
       window.open(link, '_blank')
     }

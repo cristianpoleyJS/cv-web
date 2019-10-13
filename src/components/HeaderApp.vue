@@ -1,10 +1,12 @@
 <template>
   <header class="header container">
+    <!-- Icono de la web -->
     <img
       class="header__icon"
       src="../assets/images/icons/ico-cp.svg"
       @click="goHome()">
 
+    <!-- Listado de enlaces a otras secciones -->
     <ul class="header__navigation">
       <li>
         <router-link
@@ -48,10 +50,17 @@ export default {
   name: 'HeaderApp',
   methods: {
 
+    /**
+     * Cambia el idioma de la aplicación por el que no está seleccionado.
+     * Solo están disponibles los idiomas Ingles (en) y Español (es).
+     */
     changeLanguage () {
       this.$i18n.locale = this.$i18n.locale === 'es' ? 'en' : 'es'
     },
 
+    /**
+     * Redigire a la home de la aplicación.
+     */
     goHome () {
       this.$router.push('/', () => {})
     }

@@ -1,5 +1,6 @@
 <template>
   <section class="hobbies container">
+    <!-- Título de la sección -->
     <span class="hobbies__title">{{ $t('components.hobbies.title') }}</span>
 
     <div class="hobbies__container">

@@ -1,5 +1,6 @@
 <template>
   <section class="intro container">
+    <!-- Nombre, puesto y CV -->
     <div class="intro__info-personal">
       <span
         class="intro__info-personal--name"
@@ -16,6 +17,7 @@
       </span>
     </div>
 
+    <!-- Foto y enlaces a las redes sociales -->
     <div class="intro__cristian">
       <div class="intro__cristian__content">
         <div class="intro__cristian__content__bottom">
@@ -42,6 +44,10 @@ export default {
   name: 'Intro',
   methods: {
 
+    /**
+     * Abre una nueva pestaña a la red social clicada.
+     * @param {String} app Nombre de la aplicación clicada
+     */
     goTo (app) {
       let url
       switch (app) {
