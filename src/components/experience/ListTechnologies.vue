@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'Technologies',
+  name: 'ListTechnologies',
   data () {
     return {
       technologies: [

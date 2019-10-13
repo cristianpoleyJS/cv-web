@@ -1,16 +1,16 @@
 <template>
     <section class="technologies">
-        <Technologies/>
+        <ListTechnologies/>
     </section>
 </template>
 
 <script>
-import Technologies from '@/components/experience/Technologies'
+import ListTechnologies from '@/components/experience/ListTechnologies'
 
 export default {
   name: 'Technologies',
   components: {
-    Technologies
+    ListTechnologies
   }
 }
 </script>
