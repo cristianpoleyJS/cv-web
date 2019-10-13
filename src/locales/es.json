@@ -12,8 +12,7 @@
             "description_sopra": "He estado involucrado en tareas relacionadas con el Aseguramiento de la Calidad basado en la Metodología v3 y en procesos de testing desde los ciclos tempranos del desarrollo de aplicaciones, asegurando la calidad, homogeneidad y predictibilidad."
         },
         "technologies": {
-            "title": "Tecnologías",
-            "design_for": "© Diseñado y desarrollado por <strong>Cristian Poley</strong>"
+            "title": "Tecnologías"
         },
         "about_me": {
             "title": "Un poco sobre mí",
@@ -44,21 +43,13 @@
             "brisbox": "Plataforma donde la gente puede encontrar a otras personas para ayudarles en sus mudanzas. Aplicación web desarrollada para una asignatura del grado donde se simulaba la creación y venta de un software, recreando así el comienzo de una StartUp. Realizada com el framework Meteor.js."
         },
         "footer_app": {
-
+            "design_for": "© Diseñado y desarrollado por <strong>Cristian Poley</strong>"
         },
         "header_app": {
             "home": "Inicio",
             "experience": "Experiencia",
             "portfolio": "Portfolio",
             "more_me": "Más de mi"
-        },
-        "sidebar": {
-            "start": "¡Hola!",
-            "about_me": "Sobre mí",
-            "information": "Información",
-            "projects": "Proyectos",
-            "hobbies": "Hobbies",
-            "contact": "Contacta"
         }
     }
 }

@@ -11,12 +11,45 @@
                 </a>
             </span>
         </div>
+
+        <div class="intro__cristian">
+
+            <div class="intro__cristian__content">
+                <div class="intro__cristian__content__bottom">
+                    <img src="@/assets/images/icons/linkedin.svg" @click="goTo('linkedin')"/>
+                    <img src="@/assets/images/icons/medium.svg" @click="goTo('medium')"/>
+                    <img src="@/assets/images/icons/twitter.svg" @click="goTo('twitter')"/>
+                    <img src="@/assets/images/icons/github.svg" @click="goTo('github')"/>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
 <script>
 export default {
-  name: 'Intro'
+  name: 'Intro',
+  methods: {
+
+    goTo (app) {
+      let url
+      switch (app) {
+        case 'linkedin':
+          url = 'https://www.linkedin.com/in/cristian-poley/'
+          break
+        case 'medium':
+          url = 'https://medium.com/@cripolgon'
+          break
+        case 'twitter':
+          url = 'https://twitter.com/cristianpoley'
+          break
+        case 'github':
+          url = 'https://github.com/cripolgon'
+          break
+      }
+      window.open(url, '_blank')
+    }
+  }
 }
 </script>
 
@@ -78,6 +111,42 @@ export default {
                 > a {
                     color: $secondFontColor;
                     text-decoration: none;
+                }
+            }
+        }
+
+        &__cristian {
+            float: right;
+            height: rem(400);
+            width: rem(330);
+            top: 15%;
+            position: absolute;
+            right: 1.5rem;
+            border-radius: 3px;
+            border: 2px solid $secondFontColor;
+
+            &__content {
+                position: relative;
+                background-repeat: no-repeat;
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/avatar-min-min.jpg?alt=media&token=434c1f9d-4980-4396-b673-0784ddf6432e);
+                background-size: cover;
+                background-position-y: -25px;
+                overflow: hidden;
+                height: 100%;
+
+                &__bottom {
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: $secondFontColor;
+                    position: absolute;
+                    bottom: 0;
+                    height: rem(56);
+                    width: 100%;
+
+                    > img {
+                        max-width: rem(30);
+                        cursor: pointer;
+                    }
                 }
             }
         }

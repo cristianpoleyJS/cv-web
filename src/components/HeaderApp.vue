@@ -6,22 +6,22 @@
         <ul class="header__navigation">
             <li>
                 <router-link :to="'/home'" class="hover-to-right">
-                    {{ $t('components.header_app.home') }}
+                    <img src="@/assets/images/icons/home.svg"/> <span>{{ $t('components.header_app.home') }}</span>
                 </router-link>
             </li>
             <li>
                 <router-link :to="'/experience'" class="hover-to-right">
-                    {{ $t('components.header_app.experience') }}
+                    <img src="@/assets/images/icons/experience.svg"/> <span>{{ $t('components.header_app.experience') }}</span>
                 </router-link>
             </li>
             <li>
                 <router-link :to="'/portfolio'" class="hover-to-right">
-                    {{ $t('components.header_app.portfolio') }}
+                   <img src="@/assets/images/icons/portfolio.svg"/> <span>{{ $t('components.header_app.portfolio') }}</span>
                 </router-link>
             </li>
             <li>
                 <router-link :to="'/more-me'" class="hover-to-right">
-                    {{ $t('components.header_app.more_me') }}
+                    <img src="@/assets/images/icons/about-me.svg"/> <span>{{ $t('components.header_app.more_me') }}</span>
                 </router-link>
             </li>
         </ul>
@@ -64,6 +64,19 @@ export default {
                 color: #fff;
                 text-decoration: none;
                 margin-right: 1rem;
+                padding: 1.1rem 0.5rem 1rem;
+
+                > img {
+                    width: 1rem;
+                    vertical-align: middle;
+                    margin-right: 0.5rem;
+                }
+
+                @include mq('tablet') {
+                    > span {
+                        display: none;
+                    }
+                }
             }
         }
     }

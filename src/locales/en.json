@@ -12,8 +12,7 @@
             "description_sopra": "I have been involved in tasks related to Quality Assurance based on the v3 Methodology and testing processes since the early cycles of application development, ensuring quality, homogeneity and predictability"
         },
         "technologies": {
-            "title": "Technologies",
-            "design_for": "© Designed and developed by <strong>Cristian Poley</strong>"
+            "title": "Technologies"
         },
         "about_me": {
             "title": "A little about me",
@@ -44,21 +43,13 @@
             "brisbox": "Platform where people can find other people to help them in their moves. Web application developed for a subject of the degree where the creation and sale of a software was simulated, recreating the beginning of a StartUp. Realized with the framework Meteor.js."
         },
         "footer_app": {
-
+            "design_for": "© Designed and developed by <strong>Cristian Poley</strong>"
         },
         "header_app": {
             "home": "Home",
             "experience": "experience",
             "portfolio": "Portfolio",
             "more_me": "More me"
-        },
-        "sidebar": {
-            "start": "Hello!",
-            "about_me": "About me",
-            "information": "Information",
-            "projects": "Projects",
-            "Hobbies": "Hobbies",
-            "contact": "Contact"
         }
     }
 }
