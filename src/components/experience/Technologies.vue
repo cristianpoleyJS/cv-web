@@ -164,7 +164,8 @@ export default {
 <style scoped lang="scss">
 
   .technologies {
-    padding: 2rem 4rem;
+
+    padding: 6rem 1.5rem;
 
     &__wrapper {
 

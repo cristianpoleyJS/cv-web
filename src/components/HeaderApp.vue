@@ -15,8 +15,8 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="'/portfolio'" class="hover-to-right">
-                   <img src="@/assets/images/icons/portfolio.svg"/> <span>{{ $t('components.header_app.portfolio') }}</span>
+                <router-link :to="'/technologies'" class="hover-to-right">
+                   <img src="@/assets/images/icons/technologies.svg"/> <span>{{ $t('components.header_app.technologies') }}</span>
                 </router-link>
             </li>
             <li>

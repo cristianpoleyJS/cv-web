@@ -40,7 +40,7 @@
         "projects": {
             "title": "Mis proyectos",
             "nexlu": "Red Social basada en videojuegos. Fue desarrollada bajo el framework Meteor.js y presentada como Trabajo Fin de Grado.",
-            "brisbox": "Plataforma donde la gente puede encontrar a otras personas para ayudarles en sus mudanzas. Aplicación web desarrollada para una asignatura del grado donde se simulaba la creación y venta de un software, recreando así el comienzo de una StartUp. Realizada com el framework Meteor.js."
+            "brisbox": "Plataforma donde la gente puede encontrar a otras personas para ayudarles en sus mudanzas. Aplicación web desarrollada para una asignatura del grado donde se simulaba la creación y venta de un software, recreando así el comienzo de una StartUp. Realizada con el framework Meteor.js."
         },
         "footer_app": {
             "design_for": "© Diseñado y desarrollado por <strong>Cristian Poley</strong>"
@@ -48,7 +48,7 @@
         "header_app": {
             "home": "Inicio",
             "experience": "Experiencia",
-            "portfolio": "Portfolio",
+            "technologies": "Tecnologías",
             "more_me": "Más de mi"
         }
     }

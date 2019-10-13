@@ -33,7 +33,7 @@ export default {
 <style scoped lang="scss">
     .projects {
 
-        padding: 6rem 1.5rem;
+        padding: 2rem 1.5rem;
 
         &__title {
             margin-bottom: 3rem;

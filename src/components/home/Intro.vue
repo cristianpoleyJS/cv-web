@@ -99,7 +99,7 @@ export default {
                 background-color: $primaryColor;
                 width: rem(120);
                 padding: 0.5rem;
-                border-radius: 3px;
+                border-radius: rem(3);
                 margin-top: 1rem;
                 cursor: pointer;
                 transition: background 0.3s;
@@ -122,7 +122,7 @@ export default {
             top: 15%;
             position: absolute;
             right: 1.5rem;
-            border-radius: 3px;
+            border-radius: rem(3);
             border: 2px solid $secondFontColor;
 
             &__content {

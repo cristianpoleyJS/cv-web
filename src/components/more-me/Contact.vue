@@ -46,7 +46,7 @@ export default {
             position: absolute;
             margin: rem(130) 0 0 rem(10);
             background-color: #33373d;
-            padding: 10px;
+            padding: rem(10);
             color: #fff;
 
             > a {

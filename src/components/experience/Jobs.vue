@@ -70,7 +70,7 @@ export default {
     flex-wrap: wrap;
 
     &__job {
-      perspective: 1000px;
+      perspective: rem(1000);
       margin: 1%;
       width: rem(400);
       min-height: rem(350);
@@ -82,7 +82,7 @@ export default {
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 rem(4) rem(8) 0 rgba(0, 0, 0, 0.2);
 
         &--front,
         &--back {

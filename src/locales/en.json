@@ -47,8 +47,8 @@
         },
         "header_app": {
             "home": "Home",
-            "experience": "experience",
-            "portfolio": "Portfolio",
+            "experience": "Experience",
+            "technologies": "Technologies",
             "more_me": "More me"
         }
     }
