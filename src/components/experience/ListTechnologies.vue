@@ -193,10 +193,6 @@ export default {
         flex: 0 0 45%;
       }
     }
-
-    @include mq('tablet') {
-      padding: 2rem 1.5rem;
-    }
   }
 
   .skill {
@@ -209,7 +205,6 @@ export default {
       color: $primaryFontColor;
       display: block;
       margin-bottom: 0.4rem;
-      font-family: Nunito;
       font-weight: 300;
     }
 

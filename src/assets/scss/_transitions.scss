@@ -12,14 +12,16 @@
 }
 
 // Page (Slide)
-.page-enter-active, .page-leave-active {
-    transition-duration: 0.4s;
-    transition-property: height, opacity, transform;
-    transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
-    overflow: hidden;
+.page-enter-active,
+.page-leave-active {
+  transition-duration: 0.4s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
 }
 
-.page-enter, .page-leave-to {
-    opacity: 0;
-    transform: translate(-2em, 0);
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translate(-2em, 0);
 }

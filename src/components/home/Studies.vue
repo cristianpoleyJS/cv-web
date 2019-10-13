@@ -90,12 +90,13 @@ export default {
         }
         &__title {
           display: block;
+          font-weight: 400;
         }
         &__certification {
           display: block;
           cursor: pointer;
           color: $primaryFontColor;
-          font-weight: 500;
+          font-weight: 400;
 
           &:hover {
             color: $secondFontColor;

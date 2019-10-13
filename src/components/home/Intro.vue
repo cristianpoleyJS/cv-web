@@ -82,7 +82,7 @@ export default {
 
             &--name {
                 margin: 0;
-                font-weight: 800;
+                font-weight: bold;
                 text-transform: uppercase;
                 line-height: 1;
                 font-size: 5rem;

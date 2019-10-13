@@ -63,7 +63,6 @@ export default {
         top: 0;
         display: flex;
         justify-content: space-between;
-        width: 100%;
         padding-top: 1rem;
         height: rem(56);
         padding-left: 1.5rem;
@@ -76,7 +75,7 @@ export default {
         &__navigation {
             display: inline-flex;
             list-style: none;
-            margin: 0 1rem;
+            margin: 0 0 0 1rem;
             background-color: $primaryFontColor;
             padding: 1rem;
 

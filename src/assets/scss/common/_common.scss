@@ -12,7 +12,13 @@
     }
 }
 
-.about-me, .studies, .jobs, .technologies, .projects, .hobbies, .contact {
+.about-me,
+.studies,
+.jobs,
+.technologies,
+.projects,
+.hobbies,
+.contact {
 
     &__title {
         font-size: rem(40);
@@ -21,7 +27,10 @@
     }
 }
 
-.experience, .home, .more-me, .technologies {
+.experience,
+.home,
+.more-me,
+.technologies {
     margin-top: -72px;
 }
 

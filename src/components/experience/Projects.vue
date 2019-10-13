@@ -7,11 +7,11 @@
       class="projects__project">
       <img
         v-if="project.name === 'Nexlu'"
-        src="../../assets/images/projects/nexlu.png"
+        src="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/nexlu.png?alt=media&token=ef5e8d78-d1df-4c7f-8d7d-bb890577d8cc"
         class="img-card">
       <img
         v-else-if="project.name === 'Brisbox'"
-        src="../../assets/images/projects/brisbox.png"
+        src="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/brisbox.png?alt=media&token=f3b71c60-8af2-452b-a18a-dcbdd9776803"
         class="img-card">
       <span class="projects__project--name">{{ project.name }}</span>
       <p class="projects__project--description">

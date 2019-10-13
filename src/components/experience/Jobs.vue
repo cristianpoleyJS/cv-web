@@ -106,16 +106,16 @@ export default {
         }
 
           &--sngular {
-            background-image: url('../../assets/images/jobs/sngular-logo.jpg');
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/sngular-logo.jpg?alt=media&token=b78547f0-d108-4356-9706-9b989c9d69b3');
           }
           &--ingeniova {
-            background-image: url('../../assets/images/jobs/ingeniova-logo.png');
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/ingeniova-logo.png?alt=media&token=52f5e05e-389d-47b9-86b9-139533068715');
           }
           &--wellness {
-            background-image: url('../../assets/images/jobs/wellness-logo.jpg');
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/wellness-logo.jpg?alt=media&token=283671b1-209b-4a9b-8581-c0c7cd14f10d');
           }
           &--sopra {
-            background-image: url('../../assets/images/jobs/sopra-logo.jpg');
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/sopra-logo.jpg?alt=media&token=ce009a34-d589-468c-ae66-8b5e1454306a');
           }
         &--back {
           background-color: $secondBgColor;
@@ -146,6 +146,10 @@ export default {
         transform: rotateY(180deg);
         }
       }
+    }
+
+    @include mq('mtablet') {
+      justify-content: center;
     }
   }
 }
