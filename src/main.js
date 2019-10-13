@@ -2,9 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { i18n } from './i18n'
-import { initAppFirebase } from './utils/firebaseApp.js'
-
-initAppFirebase()
 
 Vue.config.productionTip = false
 

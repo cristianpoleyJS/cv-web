@@ -107,7 +107,7 @@ export default {
                 display: block;
 
                 @include mq('tablet') {
-                    font-size: 7vw;
+                    font-size: 6vw;
                 }
             }
 
