@@ -32,11 +32,11 @@ export default new Router({
       }
     },
     {
-      path: '/portfolio',
-      name: 'Portfolio',
-      component: () => import(/* webpackChunkName: "portfolio" */ './views/Portfolio.vue'),
+      path: '/technologies',
+      name: 'Technologies',
+      component: () => import(/* webpackChunkName: "technologies" */ './views/Technologies.vue'),
       meta: {
-        title: 'CV Cristian Poley - Portfolio'
+        title: 'CV Cristian Poley - Technologies'
       }
     },
     {

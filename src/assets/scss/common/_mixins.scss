@@ -9,7 +9,7 @@ the CSS property, and the second is its value.
     -ms-#{$prop}: #{$value};
     -o-#{$prop}: #{$value};
     #{$prop}: #{$value};
- }
+}
 
 /** 
 The following mixin contains all the CSS declarations
@@ -21,7 +21,7 @@ you need to vertically position any HTML element you want.
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
- }
+}
 
 /*
 The following keyframes mixin makes use of the @content 
@@ -30,27 +30,29 @@ to the mixin.
 */
 @mixin keyframes($name) {
     @-webkit-keyframes #{$name} {
-      @content;
+        @content;
     }
+
     @-moz-keyframes #{$name} {
-      @content;
+        @content;
     }
+
     @keyframes #{$name} {
-      @content;
+        @content;
     }
- }
- 
+}
+
 /*
 It allows you to quickly specify values for the four directions:
 top, right, bottom, and left.
 */
 @mixin abs-position ($top, $right, $bottom, $left) {
-    position: absolute; 
+    position: absolute;
     top: $top;
     right: $right;
     bottom: $bottom;
     left: $left;
- }
+}
 
 
 /**
@@ -58,8 +60,7 @@ You can use the following mixin with three breakpoints:
 tablet, desktop, and large. There’s no breakpoint for mobile
 because that’s the size you design for by default.
 */
-$breakpoints: (
-    "phone-small": 360px,
+$breakpoints: ("phone-small": 360px,
     "phone": 400px,
     "phone-wide": 480px,
     "phablet": 560px,
@@ -69,18 +70,19 @@ $breakpoints: (
     "tablet-wide": 1024px,
     "desktop": 1248px,
     "desktop-wide": 1440px,
-    "extra-deskpot-wide": 1500px
-);
+    "extra-deskpot-wide": 1500px);
 
 @mixin mq($width, $type: max) {
     @if map_has_key($breakpoints, $width) {
         $width: map_get($breakpoints, $width);
-        @if $type == max {
+
+        @if $type==max {
             $width: $width - 1px;
         }
+
         @media only screen and (#{$type}-width: $width) {
-                @content;
-            }
+            @content;
+        }
     }
 }
 
@@ -88,7 +90,9 @@ $browser-context: 16; // Default
 
 @function rem($pixels, $context: $browser-context) {
     @return #{$pixels/$context}rem
-};
+}
+
+;
 
 /**
 It performs truncation on any text that overflows its containing

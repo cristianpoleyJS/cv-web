@@ -1,15 +1,26 @@
 <template>
-    <section class="contact">
-        <span class="contact__title">Contacta conmigo</span>
+  <section class="contact container">
+    <!-- Título de la sección -->
+    <span class="contact__title">{{ $t('components.contact.title') }}</span>
 
-        <!-- Mapa -->
-        <div class="contact__container">
-            <p>¡No dudes en contactar conmigo!</p>
-            <p>Puedes mandarme un correo a la siguiente dirección</p>
-            <p><a href="mailto:cripolgon@gmail.com" target="_top">cripolgon@gmail.com</a></p>
-        </div>
-        <iframe width="100%" height="600" frameborder="0" style="border:0" :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAaI7KZ4pQg0REHaV2J6lXbg&key=${API_KEY_MAPS}`" allowfullscreen></iframe>
-    </section>
+    <!-- Mapa -->
+    <div class="contact__container">
+      <p>{{ $t('components.contact.message1') }}</p>
+      <p>{{ $t('components.contact.message2') }}</p>
+      <p>
+        <a
+          href="mailto:cripolgon@gmail.com"
+          target="_top">cripolgon@gmail.com</a>
+      </p>
+    </div>
+    <iframe
+      width="100%"
+      height="600"
+      frameborder="0"
+      style="border:0"
+      :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAaI7KZ4pQg0REHaV2J6lXbg&key=${API_KEY_MAPS}`"
+      allowfullscreen />
+  </section>
 </template>
 
 <script>
@@ -35,17 +46,20 @@ export default {
 
     .contact {
 
-        margin: 0 auto;
         padding: 1rem 1.5rem;
-        max-width: rem(1440);
         color: $secondFontColor;
+
+        &__title {
+            margin-bottom: 2rem;
+        }
 
         &__container {
             position: absolute;
-            margin: 130px 0px 0px 10px;
+            margin: rem(130) 0 0 rem(10);
             background-color: #33373d;
-            padding: 10px;
-            color: #fff;
+            padding: rem(10);
+            color: $secondFontColor;
+            margin-right: 3rem;
 
             > a {
                 color: #fff !important;

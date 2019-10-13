@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   productionSourceMap: false,
   runtimeCompiler: true,
@@ -12,11 +14,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `
-            @import "@/assets/scss/common/_common.scss";
-            @import "@/assets/scss/common/_icons.scss";
-            @import "@/assets/scss/common/_hover.scss";
-            @import "@/assets/scss/common/_mixins.scss";
-            @import "@/assets/scss/common/_palette.scss";
+            @import "@/assets/scss/main.scss";
           `
       }
     }
@@ -32,7 +30,11 @@ module.exports = {
         minSize: 10000,
         maxSize: 250000
       }
-    }
+    },
+    plugins: [new HtmlWebpackPlugin({
+      template: 'public/index.html',
+      favicon: 'public/favicon.ico'
+    })]
   },
 
   chainWebpack: config => {
@@ -48,5 +50,5 @@ module.exports = {
       .options({ fix: true })
   },
 
-  lintOnSave: undefined
+  lintOnSave: true
 }

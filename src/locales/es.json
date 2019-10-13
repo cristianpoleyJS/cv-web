@@ -1,40 +1,61 @@
 {
     "components": {
+        "jobs": {
+            "title": "Experiencia laboral",
+            "location_sngular": "May 2018 - Actualidad (Madrid)",
+            "location_ingeniova": "Feb 2017 - May 2018 (Sevilla)",
+            "location_wellness": "Oct 2016 - Dic 2016 (Sevilla)",
+            "location_sopra": "Ene 2016 - Jul 2016 (Sevilla)",
+            "description_sngular": "Desarrollador Frontend para un proyecto en BBVA utilizando como principal tecnología Vue.js y Firebase, utlizando como plataforma Google Cloud Platform.",
+            "description_ingeniova": "Como principal desarrollador Frontend de la compañía, me encargué del diseño, accesibilidad y usabilidad de las aplicaciones web con el framework Angular 2/4, analizando y estudiando siempre los requisitos del cliente, aplicando clean code y buenas prácticas. También he trabajado puntualmente con la parte Backend en algunas aplicaciones, usando Node.js y Microservicios. Además, también he sido el responsable de la gestión de todas las páginas web corporativas del principal cliente, webs desarrolladas con Orchard, PHP y JavaScript Vanila.",
+            "description_wellness": "Mi papel en esta empresa IoT ha sido la de desarrollador productos y servicios de seguridad, especialmente de la etapa de recolección de información. He implementado colectores para comprobar la seguridad en redes siguiendo los controles definidos en la metodología de seguridad OWISAM con el lenguaje de programación Python y también he realizado una interfaz de usuario para una aplicación de iCirrus (un proyecto de EU Horizon 2020) con el framework de javascript Meteor.js.",
+            "description_sopra": "He estado involucrado en tareas relacionadas con el Aseguramiento de la Calidad basado en la Metodología v3 y en procesos de testing desde los ciclos tempranos del desarrollo de aplicaciones, asegurando la calidad, homogeneidad y predictibilidad."
+        },
+        "technologies": {
+            "title": "Tecnologías"
+        },
         "about_me": {
+            "title": "Un poco sobre mí",
+            "question1_title": "¿Por qué me dedico a esto?",
+            "question1_description": "Siempre me ha gustado la tecnología, y siempre tuve curiosidad de saber cómo funcionan las cosas (un ordenador, un programa, internet, etc.). Además, siempre me atrajo la idea de crear algo que la gente pudiera utilizar y le pudiese ser de ayuda. Por ello, decidí ser Ingeniero Informático y dedicarme a la programación.",
+            "question2_title": "¿Que hago y que me gustaría hacer?",
+            "question2_description": "Ahora mismo me centro en aprender nuevas skills y desarrollar aplicaciones propias, aunque en corto plazo me gustaría tener un puesto de mayor responsabilidad. Pienso que al final tu perfil profesional debe evolucionar en las responsabilidades. A parte de programar, me gustaría gestionar y planificar el trabajo de un equipo para cumplir los objetivos de un proyecto."
+        },
+        "intro": {
+            "hi": "Cristian Poley",
+            "profession": "Desarrollador Front-end",
+            "download_pdf": "Descarga mi CV"
+        },
+        "studies": {
+            "title": "Estudios",
+            "certification": "Certificación",
+            "course1": "Educación Secundaria Obligatoria",
+            "course2": "Bachillerato de Ciencia y Tecnología",
+            "course3": "Curso online de Android",
+            "course4": "Grado Ingeniería Informática del Software",
+            "course5": "Curso Angular 2"
         },
         "contact": {
-
+            "title": "Contacta conmigo",
+            "message1": "¡No dudes en contactar conmigo!",
+            "message2": "Puedes mandarme un correo a la siguiente dirección"
+        },
+        "hobbies": {
+            "title": "Hobbies"
+        },
+        "projects": {
+            "title": "Mis proyectos",
+            "nexlu": "Red Social basada en videojuegos. Fue desarrollada bajo el framework Meteor.js y presentada como Trabajo Fin de Grado.",
+            "brisbox": "Plataforma donde la gente puede encontrar a otras personas para ayudarles en sus mudanzas. Aplicación web desarrollada para una asignatura del grado donde se simulaba la creación y venta de un software, recreando así el comienzo de una StartUp. Realizada con el framework Meteor.js."
         },
         "footer_app": {
             "design_for": "© Diseñado y desarrollado por <strong>Cristian Poley</strong>"
         },
-        "hobbies": {
-
-        },
-        "intro": {
-            "hi": "Cristian Poley",
-            "profession": "Front-end Developer",
-            "download_pdf": "Descarga mi CV"
-        },
-        "jobs": {
-
-        },
-        "projects": {
-
-        },
-        "sidebar": {
-            "start": "¡Hola!",
-            "about_me": "Sobre mí",
-            "information": "Información",
-            "projects": "Proyectos",
-            "hobbies": "Hobbies",
-            "contact": "Contacta"
-        },
-        "studies": {
-
-        },
-        "technologies": {
-            
+        "header_app": {
+            "home": "Inicio",
+            "experience": "Experiencia",
+            "technologies": "Tecnologías",
+            "more_me": "Más de mi"
         }
     }
 }

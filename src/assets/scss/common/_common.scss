@@ -12,10 +12,29 @@
     }
 }
 
-.about-me, .jobs, .technologies, .projects, .hobbies, .contact {
+.about-me,
+.studies,
+.jobs,
+.technologies,
+.projects,
+.hobbies,
+.contact {
 
     &__title {
         font-size: rem(40);
         font-family: Anton;
+        display: block;
     }
+}
+
+.experience,
+.home,
+.more-me,
+.technologies {
+    margin-top: -72px;
+}
+
+.container {
+    max-width: rem(1440);
+    margin: 0 auto;
 }

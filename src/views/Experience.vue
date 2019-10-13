@@ -1,29 +1,25 @@
 <template>
-  <transition name="fade">
-    <section class="experience">
+  <section class="experience">
+    <!-- Sección 'Trabajos' -->
+    <div class="jobs">
+      <Jobs />
+    </div>
 
-        <!-- Sección 'Trabajos' -->
-        <div class="jobs">
-          <Jobs/>
-        </div>
-
-        <!-- Skills -->
-        <div class="skills">
-          <Technologies/>
-        </div>
-
-    </section>
-  </transition>
+    <!-- Mis proyectos -->
+    <div class="projects">
+      <Projects />
+    </div>
+  </section>
 </template>
 
 <script>
-import Technologies from '@/components/experience/Technologies'
+import Projects from '@/components/experience/Projects'
 import Jobs from '@/components/experience/Jobs'
 
 export default {
   name: 'Experience',
   components: {
-    Technologies,
+    Projects,
     Jobs
   }
 }
@@ -36,7 +32,7 @@ export default {
     .jobs {
       background-color: $bgBlack;
     }
-    .skills {
+    .projects {
       background-color: #fff;
     }
   }
