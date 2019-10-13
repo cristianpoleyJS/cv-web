@@ -26,33 +26,34 @@
 <script>
 export default {
   name: 'Studies',
-  data () {
-    return {
-      studies: [
+  computed: {
+
+    studies () {
+      return [
         {
           year: 2010,
-          title: 'Educación Secundaria Obligatoria',
+          title: this.$i18n.t('components.studies.course1'),
           university: 'Instituto Santa Aurelia'
         },
         {
           year: 2012,
-          title: 'Bachillerato de Ciencia y Tecnología',
+          title: this.$i18n.t('components.studies.course2'),
           university: 'Instituto Santa Aurelia'
         },
         {
           year: 2013,
-          title: 'Curso online de Android',
+          title: this.$i18n.t('components.studies.course3'),
           university: 'Universidad Politécnica de Valencia',
           url: 'https://miriadax.net//files/10132/badge/96df1ae7-b508-41c0-aec7-9459bc4c79d2.pdf?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BmpznbfCGS8e9X7wkuQ%2FrMg%3D%3D'
         },
         {
           year: 2016,
-          title: 'Grado Ingeniería Informática del Software',
+          title: this.$i18n.t('components.studies.course4'),
           university: 'Universidad de Sevilla'
         },
         {
           year: 2017,
-          title: 'Curso Angular 2',
+          title: this.$i18n.t('components.studies.course5'),
           university: 'Udemy',
           url: 'https://www.udemy.com/certificate/UC-EDL10RWT/'
         }

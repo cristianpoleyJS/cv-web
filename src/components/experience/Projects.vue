@@ -25,9 +25,10 @@
 <script>
 export default {
   name: 'Projects',
-  data () {
-    return {
-      projects: [
+  computed: {
+
+    projects () {
+      return [
         {
           name: 'Nexlu',
           description: this.$i18n.t('components.projects.nexlu'),

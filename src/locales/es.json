@@ -23,11 +23,17 @@
         },
         "intro": {
             "hi": "Cristian Poley",
-            "profession": "Front-end Developer",
+            "profession": "Desarrollador Front-end",
             "download_pdf": "Descarga mi CV"
         },
         "studies": {
-            "title": "Estudios"
+            "title": "Estudios",
+            "certification": "Certificación",
+            "course1": "Educación Secundaria Obligatoria",
+            "course2": "Bachillerato de Ciencia y Tecnología",
+            "course3": "Curso online de Android",
+            "course4": "Grado Ingeniería Informática del Software",
+            "course5": "Curso Angular 2"
         },
         "contact": {
             "title": "Contacta conmigo",

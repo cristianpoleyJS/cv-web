@@ -37,9 +37,10 @@
 <script>
 export default {
   name: 'Jobs',
-  data () {
-    return {
-      jobs: [
+  computed: {
+
+    jobs () {
+      return [
         {
           company: 'S|ngular',
           id: 'sngular',

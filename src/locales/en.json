@@ -2,7 +2,7 @@
     "components": {
         "jobs": {
             "title": "Work experience",
-            "location_sngular": "May 2018 - Actualidad (Madrid)",
+            "location_sngular": "May 2018 - Currently (Madrid)",
             "location_ingeniova": "Feb 2017 - May 2018 (Sevilla)",
             "location_wellness": "Oct 2016 - Dec 2016 (Sevilla)",
             "location_sopra": "Jan 2016 - Jul 2016 (Sevilla)",
@@ -27,7 +27,13 @@
             "download_pdf": "Download my CV"
         },
         "studies": {
-            "title": "Studies"
+            "title": "Studies",
+            "certification": "Certification",
+            "course1": "Obligatory Secondary Education",
+            "course2": "Bachelor of Science and Technology",
+            "course3": "Android online course",
+            "course4": "Degree in Software Engineering",
+            "course5": "Angular course 2"
         },
         "contact": {
             "title": "Contact me",

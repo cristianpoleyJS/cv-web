@@ -58,7 +58,8 @@ export default {
             margin: rem(130) 0 0 rem(10);
             background-color: #33373d;
             padding: rem(10);
-            color: #fff;
+            color: $secondFontColor;
+            margin-right: 3rem;
 
             > a {
                 color: #fff !important;
