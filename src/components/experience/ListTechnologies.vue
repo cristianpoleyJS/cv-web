@@ -205,7 +205,6 @@ export default {
       color: $primaryFontColor;
       display: block;
       margin-bottom: 0.4rem;
-      font-weight: 300;
     }
 
     &__progress-bar-container {

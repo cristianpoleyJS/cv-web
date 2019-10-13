@@ -2,7 +2,8 @@
   <header class="header container">
     <img
       class="header__icon"
-      src="../assets/images/icons/ico-cp.svg">
+      src="../assets/images/icons/ico-cp.svg"
+      @click="goHome()">
 
     <ul class="header__navigation">
       <li>
@@ -49,6 +50,10 @@ export default {
 
     changeLanguage () {
       this.$i18n.locale = this.$i18n.locale === 'es' ? 'en' : 'es'
+    },
+
+    goHome () {
+      this.$router.push('/', () => {})
     }
   }
 }
@@ -68,8 +73,9 @@ export default {
         padding-left: 1.5rem;
 
         &__icon {
-            width: 3.5rem;
-            height: 3.5rem;
+          width: 3.5rem;
+          height: 3.5rem;
+          cursor: pointer;
         }
 
         &__navigation {

@@ -1,22 +1,21 @@
 <template>
   <section class="projects container">
     <span class="projects__title">{{ $t('components.projects.title') }}</span>
-    <div
-      v-for="project in projects"
-      :key="project.name"
-      class="projects__project">
-      <img
-        v-if="project.name === 'Nexlu'"
-        src="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/nexlu.png?alt=media&token=ef5e8d78-d1df-4c7f-8d7d-bb890577d8cc"
-        class="img-card">
-      <img
-        v-else-if="project.name === 'Brisbox'"
-        src="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/brisbox.png?alt=media&token=f3b71c60-8af2-452b-a18a-dcbdd9776803"
-        class="img-card">
-      <span class="projects__project--name">{{ project.name }}</span>
-      <p class="projects__project--description">
-        {{ project.description }}
-      </p>
+    <div class="projects__wrapper">
+      <div
+        v-for="project in projects"
+        :key="project.name"
+        class="projects__wrapper__project">
+        <span
+          class="projects__wrapper__project--image"
+          :style="{
+            'background-image': `url('${project.image}')`
+          }" />
+        <span class="projects__wrapper__project--name">{{ project.name }}</span>
+        <p class="projects__wrapper__project--description">
+          {{ project.description }}
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -29,11 +28,13 @@ export default {
       projects: [
         {
           name: 'Nexlu',
-          description: this.$i18n.t('components.projects.nexlu')
+          description: this.$i18n.t('components.projects.nexlu'),
+          image: 'https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/nexlu.png?alt=media&token=ef5e8d78-d1df-4c7f-8d7d-bb890577d8cc'
         },
         {
           name: 'Brisbox',
-          description: this.$i18n.t('components.projects.brisbox')
+          description: this.$i18n.t('components.projects.brisbox'),
+          image: 'https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/brisbox.png?alt=media&token=f3b71c60-8af2-452b-a18a-dcbdd9776803'
         }
       ]
     }
@@ -50,24 +51,43 @@ export default {
             margin-bottom: 3rem;
         }
 
-        &__project {
-            display: block;
-            height: rem(300);
-            margin-bottom: 3rem;
+        &__wrapper {
 
-            img {
-                float: left;
-                margin-right: 2rem;
-                max-width: rem(500);
-            }
+          display: flex;
 
-            &--name {
-                font-size: 2rem;
-                font-weight: bold;
-            }
-            &--description {
-                font-size: 1rem;
-            }
+          &__project {
+              display: block;
+              overflow: hidden;
+              max-width: rem(440);
+              margin: 1%;
+              border: 1px solid $bgGray;
+              border-radius: 3px;
+
+              &--image {
+                  width: rem(500);
+                  height: rem(210);
+                  background-size: cover;
+                  display: block;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin-bottom: 1rem;
+              }
+
+              &--name {
+                  font-size: 2rem;
+                  font-weight: bold;
+                  padding: 1rem;
+              }
+              &--description {
+                  font-size: 1rem;
+                  padding: 0 1rem;
+              }
+
+              &:hover {
+                transition: box-shadow 0.5s;
+                box-shadow: rem(3) rem(3) rem(5) $bgGray;
+              }
+          }
         }
     }
 </style>

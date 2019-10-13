@@ -7,9 +7,9 @@
           :key="study.title"
           class="study"
           :class="{'study--not-last': index < studies.length - 1}">
-          <span class="study__year">{{ study.year }}</span>
           <span class="study__title">{{ study.title }}</span>
           <span class="study__university">{{ study.university }}</span>
+          <span class="study__year">{{ study.year }}</span>
           <span
             v-if="study.url"
             class="study__certification"
@@ -87,6 +87,7 @@ export default {
         &__year {
           display: block;
           font-style: italic;
+          font-size: rem(14);
         }
         &__title {
           display: block;

@@ -79,7 +79,7 @@ export default {
       perspective: rem(1000);
       margin: 1%;
       width: rem(400);
-      min-height: rem(350);
+      min-height: rem(330);
 
       &__inner {
         position: relative;
