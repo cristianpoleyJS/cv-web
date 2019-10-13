@@ -1,6 +1,11 @@
 {
-  "name": "cv-web",
-  "version": "0.1.0",
+  "name": "cristian.poley",
+  "description": "Personal page Cristian Poley - CV",
+  "author": {
+    "name": "Cristian Poley",
+    "email": "cripolgon@gmail.com"
+  },
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
