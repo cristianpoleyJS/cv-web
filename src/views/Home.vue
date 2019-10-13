@@ -1,18 +1,51 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="home">
+    <!-- Introducción -->
+    <div class="home__intro">
+      <Intro />
+    </div>
+
+    <!-- Sobre mi -->
+    <div class="home__about-me">
+      <AboutMe />
+    </div>
+
+    <!-- Estudios -->
+    <div class="home__studies">
+      <Studies />
+    </div>
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Studies from '@/components/home/Studies'
+import AboutMe from '@/components/home/AboutMe'
+import Intro from '@/components/home/Intro'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    HelloWorld
+    AboutMe,
+    Studies,
+    Intro
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .home {
+    overflow: hidden;
+
+    &__intro {
+      background: url('../assets/images/background.png');
+      background-size: cover;
+      box-shadow: inset 30px -40px 20px 0px #25292c;
+      background-color: #24292c;
+    }
+
+    &__about-me {
+      background: rgb(37, 41, 44);
+    }
+  }
+
+</style>

@@ -1,0 +1,61 @@
+{
+    "components": {
+        "jobs": {
+            "title": "Work experience",
+            "location_sngular": "May 2018 - Currently (Madrid)",
+            "location_ingeniova": "Feb 2017 - May 2018 (Sevilla)",
+            "location_wellness": "Oct 2016 - Dec 2016 (Sevilla)",
+            "location_sopra": "Jan 2016 - Jul 2016 (Sevilla)",
+            "description_sngular": "Frontend developer for a project in BBVA using as main technology Vue.js and Firebase, using as platform Google Cloud Platform.",
+            "description_ingeniova": "As the company's main Frontend developer, I was in charge of the design, accessibility and usability of the web applications with the Angular 2/4 framework, always analysing and studying the client's requirements, applying clean code and good practices. I have also worked punctually with the Backend part in some applications, using Node.js and Microservices. In addition, I have also been responsible for the management of all the corporate websites of the main client, websites developed with Orchard, PHP and JavaScript Vanila.",
+            "description_wellness": "My role in this company IoT has been that of developer of security products and services, especially of the information gathering stage. I have implemented collectors to check network security following the controls defined in the OWISAM security methodology with the Python programming language and I have also created a user interface for an iCirrus application (an EU Horizon 2020 project) with the Meteor.js. javascript framework",
+            "description_sopra": "I have been involved in tasks related to Quality Assurance based on the v3 Methodology and testing processes since the early cycles of application development, ensuring quality, homogeneity and predictability"
+        },
+        "technologies": {
+            "title": "Technologies"
+        },
+        "about_me": {
+            "title": "A little about me",
+            "question1_title": "Why do I do this?",
+            "question1_description": "I've always liked technology, and I've always been curious to know how things work (a computer, a program, the internet, etc.). Also, I was always attracted to the idea of creating something that people could use and be of help to them. That's why I decided to become a Computer Engineer and dedicate myself to programming",
+            "question2_title": "What do I do and what would I like to do?",
+            "question2_description": "Right now I'm focusing on learning new skills and developing my own applications, although in the short term I'd like to have a more responsible position. I think that in the end your professional profile should evolve in responsibilities. Apart from programming, I would like to manage and plan the work of a team to meet the objectives of a project."
+        },
+        "intro": {
+            "hi": "Cristian Poley",
+            "profession": "Front-end Developer",
+            "download_pdf": "Download my CV"
+        },
+        "studies": {
+            "title": "Studies",
+            "certification": "Certification",
+            "course1": "Obligatory Secondary Education",
+            "course2": "Bachelor of Science and Technology",
+            "course3": "Android online course",
+            "course4": "Degree in Software Engineering",
+            "course5": "Angular course 2"
+        },
+        "contact": {
+            "title": "Contact me",
+            "message1": "Don't hesitate to contact me!",
+            "message2": "You can send me an email to the following address"
+        },
+        "hobbies": {
+            "title": "Hobbies"
+        },
+        "projects": {
+            "title": "My projects",
+            "nexlu": "Social network based on video games. It was developed under the Meteor.js framework and presented as End of Grade Work.",
+            "brisbox": "Platform where people can find other people to help them in their moves. Web application developed for a subject of the degree where the creation and sale of a software was simulated, recreating the beginning of a StartUp. Realized with the framework Meteor.js."
+        },
+        "footer_app": {
+            "design_for": "© Designed and developed by <strong>Cristian Poley</strong>"
+        },
+        "header_app": {
+            "home": "Home",
+            "experience": "Experience",
+            "technologies": "Technologies",
+            "more_me": "More me"
+        }
+    }
+}

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -10,16 +9,41 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'Home',
+      component: () => import(/* webpackChunkName: "home" */ './views/Home.vue'),
+      meta: {
+        title: 'CV Cristian Poley - Home'
+      }
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/experience',
+      name: 'Experience',
+      component: () => import(/* webpackChunkName: "experience" */ './views/Experience.vue'),
+      meta: {
+        title: 'CV Cristian Poley - Experience'
+      }
+    },
+    {
+      path: '/more-me',
+      name: 'MoreMe',
+      component: () => import(/* webpackChunkName: "moreme" */ './views/MoreMe.vue'),
+      meta: {
+        title: 'CV Cristian Poley - More Me'
+      }
+    },
+    {
+      path: '/technologies',
+      name: 'Technologies',
+      component: () => import(/* webpackChunkName: "technologies" */ './views/Technologies.vue'),
+      meta: {
+        title: 'CV Cristian Poley - Technologies'
+      }
+    },
+    {
+      path: '*',
+      redirect: {
+        name: 'Home'
+      }
     }
   ]
 })

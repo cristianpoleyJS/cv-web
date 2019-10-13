@@ -1,0 +1,40 @@
+@import "./_palette.scss";
+@import "./_mixins.scss";
+
+.link-app {
+    color: $secondFontColor;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $hoverLinkColor;
+    }
+}
+
+.about-me,
+.studies,
+.jobs,
+.technologies,
+.projects,
+.hobbies,
+.contact {
+
+    &__title {
+        font-size: rem(40);
+        font-family: Anton;
+        display: block;
+    }
+}
+
+.experience,
+.home,
+.more-me,
+.technologies {
+    margin-top: -72px;
+}
+
+.container {
+    max-width: rem(1440);
+    margin: 0 auto;
+}
