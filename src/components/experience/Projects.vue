@@ -90,6 +90,19 @@ export default {
                 transition: box-shadow 0.5s;
                 box-shadow: rem(3) rem(3) rem(5) $bgGray;
               }
+
+          }
+
+          @include mq('phablet') {
+
+            flex-wrap: wrap;
+
+            &__project {
+
+              max-width: 100%;
+              width: 100%;
+              margin-bottom: 1rem;
+            }
           }
         }
     }
