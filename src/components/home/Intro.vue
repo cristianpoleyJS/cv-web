@@ -1,29 +1,40 @@
 <template>
-    <section class="intro container">
-        <div class="intro__info-personal">
-            <span class="intro__info-personal--name" v-html="$t('components.intro.hi')"/>
-            <span class="intro__info-personal--profession">
-                {{ $t('components.intro.profession') }}
-            </span>
-            <span class="intro__info-personal--cv">
-                <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/CristianPoleyCV.pdf?alt=media&token=106cdb84-90c1-48c2-9cec-aaf2d3af02e4">
-                    {{ $t('components.intro.download_pdf') }}
-                </a>
-            </span>
-        </div>
+  <section class="intro container">
+    <div class="intro__info-personal">
+      <span
+        class="intro__info-personal--name"
+        v-html="$t('components.intro.hi')" />
+      <span class="intro__info-personal--profession">
+        {{ $t('components.intro.profession') }}
+      </span>
+      <span class="intro__info-personal--cv">
+        <a
+          target="_blank"
+          href="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/CristianPoleyCV.pdf?alt=media&token=106cdb84-90c1-48c2-9cec-aaf2d3af02e4">
+          {{ $t('components.intro.download_pdf') }}
+        </a>
+      </span>
+    </div>
 
-        <div class="intro__cristian">
-
-            <div class="intro__cristian__content">
-                <div class="intro__cristian__content__bottom">
-                    <img src="@/assets/images/icons/linkedin.svg" @click="goTo('linkedin')"/>
-                    <img src="@/assets/images/icons/medium.svg" @click="goTo('medium')"/>
-                    <img src="@/assets/images/icons/twitter.svg" @click="goTo('twitter')"/>
-                    <img src="@/assets/images/icons/github.svg" @click="goTo('github')"/>
-                </div>
-            </div>
+    <div class="intro__cristian">
+      <div class="intro__cristian__content">
+        <div class="intro__cristian__content__bottom">
+          <img
+            src="@/assets/images/icons/linkedin.svg"
+            @click="goTo('linkedin')">
+          <img
+            src="@/assets/images/icons/medium.svg"
+            @click="goTo('medium')">
+          <img
+            src="@/assets/images/icons/twitter.svg"
+            @click="goTo('twitter')">
+          <img
+            src="@/assets/images/icons/github.svg"
+            @click="goTo('github')">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -97,12 +108,14 @@ export default {
             &--cv {
                 display: block;
                 background-color: $primaryColor;
-                width: rem(120);
+                min-width: rem(120);
+                max-width: rem(130);
                 padding: 0.5rem;
                 border-radius: rem(3);
                 margin-top: 1rem;
                 cursor: pointer;
                 transition: background 0.3s;
+                text-align: center;
 
                 &:hover {
                     background-color: $primaryBgColor;
@@ -148,6 +161,9 @@ export default {
                         cursor: pointer;
                     }
                 }
+            }
+            @include mq('tablet') {
+                display: none;
             }
         }
     }

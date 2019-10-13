@@ -1,19 +1,19 @@
 <template>
-    <section class="about-me container">
-        <span class="about-me__title">{{ $t('components.about_me.title') }}</span>
-        <div class="about-me__desires">
-            <div class="about-me__desires--question">
-                <span>{{ $t('components.about_me.question1_title') }}</span>
-                <p>{{ $t('components.about_me.question1_description') }}
-
-                </p>
-            </div>
-            <div class="about-me__desires--question">
-                <span>{{ $t('components.about_me.question2_title') }}</span>
-                <p>{{ $t('components.about_me.question2_description') }}</p>
-            </div>
-        </div>
-    </section>
+  <section class="about-me container">
+    <span class="about-me__title">{{ $t('components.about_me.title') }}</span>
+    <div class="about-me__desires">
+      <div class="about-me__desires--question">
+        <span>{{ $t('components.about_me.question1_title') }}</span>
+        <p>
+          {{ $t('components.about_me.question1_description') }}
+        </p>
+      </div>
+      <div class="about-me__desires--question">
+        <span>{{ $t('components.about_me.question2_title') }}</span>
+        <p>{{ $t('components.about_me.question2_description') }}</p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

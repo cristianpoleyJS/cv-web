@@ -1,7 +1,7 @@
 <template>
-    <section class="technologies">
-        <ListTechnologies/>
-    </section>
+  <section class="technologies">
+    <ListTechnologies />
+  </section>
 </template>
 
 <script>

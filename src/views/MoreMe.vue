@@ -1,17 +1,15 @@
 <template>
-    <section class="more-me">
+  <section class="more-me">
+    <!-- Hobbies -->
+    <div class="hobbies">
+      <Hobbies />
+    </div>
 
-        <!-- Hobbies -->
-        <div class="hobbies">
-          <Hobbies/>
-        </div>
-
-        <!-- Contactar -->
-        <div class="contact">
-          <Contact/>
-        </div>
-
-    </section>
+    <!-- Contactar -->
+    <div class="contact">
+      <Contact />
+    </div>
+  </section>
 </template>
 
 <script>

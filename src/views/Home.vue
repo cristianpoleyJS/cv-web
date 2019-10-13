@@ -1,20 +1,24 @@
 <template>
-    <section class="home">
+  <section class="home">
+    <!-- Introducción -->
+    <div class="home__intro">
+      <Intro />
+    </div>
 
-      <!-- Introducción -->
-      <div class="home__intro">
-        <Intro />
-      </div>
+    <!-- Sobre mi -->
+    <div class="home__about-me">
+      <AboutMe />
+    </div>
 
-      <!-- Sección 'Sobre mi' -->
-      <div class="home__about-me">
-        <AboutMe/>
-      </div>
-
-    </section>
+    <!-- Estudios -->
+    <div class="home__studies">
+      <Studies />
+    </div>
+  </section>
 </template>
 
 <script>
+import Studies from '@/components/home/Studies'
 import AboutMe from '@/components/home/AboutMe'
 import Intro from '@/components/home/Intro'
 
@@ -22,6 +26,7 @@ export default {
   name: 'Home',
   components: {
     AboutMe,
+    Studies,
     Intro
   }
 }

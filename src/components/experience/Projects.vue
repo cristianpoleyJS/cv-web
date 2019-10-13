@@ -1,13 +1,24 @@
 <template>
-    <section class="projects container">
-        <span class="projects__title">{{ $t('components.projects.title') }}</span>
-        <div class="projects__project" v-for="project in projects" :key="project.name">
-            <img src="../../assets/images/projects/nexlu.png" v-if="project.name === 'Nexlu'" class="img-card">
-            <img src="../../assets/images/projects/brisbox.png" v-else-if="project.name === 'Brisbox'" class="img-card">
-            <span class="projects__project--name">{{ project.name }}</span>
-            <p class="projects__project--description">{{ project.description }}</p>
-        </div>
-    </section>
+  <section class="projects container">
+    <span class="projects__title">{{ $t('components.projects.title') }}</span>
+    <div
+      v-for="project in projects"
+      :key="project.name"
+      class="projects__project">
+      <img
+        v-if="project.name === 'Nexlu'"
+        src="../../assets/images/projects/nexlu.png"
+        class="img-card">
+      <img
+        v-else-if="project.name === 'Brisbox'"
+        src="../../assets/images/projects/brisbox.png"
+        class="img-card">
+      <span class="projects__project--name">{{ project.name }}</span>
+      <p class="projects__project--description">
+        {{ project.description }}
+      </p>
+    </div>
+  </section>
 </template>
 
 <script>

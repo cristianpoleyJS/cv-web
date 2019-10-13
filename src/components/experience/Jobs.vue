@@ -1,26 +1,32 @@
 <template>
-    <section class="jobs container">
-        <span class="jobs__title">{{ $t('components.jobs.title') }}</span>
+  <section class="jobs container">
+    <span class="jobs__title">{{ $t('components.jobs.title') }}</span>
 
-        <div class="jobs__container">
-          <div class="jobs__container__job" v-for="job in jobs" :key="job.company">
-            <div class="jobs__container__job__inner">
-              <div class="jobs__container__job__inner--front"
-                :class="{
-                  'jobs__container__job__inner--sngular': job.id === 'sngular',
-                  'jobs__container__job__inner--ingeniova': job.id === 'ingeniova',
-                  'jobs__container__job__inner--wellness': job.id === 'wellness',
-                  'jobs__container__job__inner--sopra': job.id === 'sopra',
-                }"/>
-              <div class="jobs__container__job__inner--back">
-                <span class="jobs__container__job__inner--back--title">{{ job.company }}</span><br>
-                <span class="jobs__container__job__inner--back--location">{{ job.location }}</span>
-                <p class="jobs__container__job__inner--back--description">{{ job.description }}</p>
-              </div>
-            </div>
+    <div class="jobs__container">
+      <div
+        v-for="job in jobs"
+        :key="job.company"
+        class="jobs__container__job">
+        <div class="jobs__container__job__inner">
+          <div
+            class="jobs__container__job__inner--front"
+            :class="{
+              'jobs__container__job__inner--sngular': job.id === 'sngular',
+              'jobs__container__job__inner--ingeniova': job.id === 'ingeniova',
+              'jobs__container__job__inner--wellness': job.id === 'wellness',
+              'jobs__container__job__inner--sopra': job.id === 'sopra',
+            }" />
+          <div class="jobs__container__job__inner--back">
+            <span class="jobs__container__job__inner--back--title">{{ job.company }}</span><br>
+            <span class="jobs__container__job__inner--back--location">{{ job.location }}</span>
+            <p class="jobs__container__job__inner--back--description">
+              {{ job.description }}
+            </p>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

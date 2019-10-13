@@ -1,18 +1,15 @@
 <template>
-    <section class="experience">
+  <section class="experience">
+    <!-- Sección 'Trabajos' -->
+    <div class="jobs">
+      <Jobs />
+    </div>
 
-        <!-- Sección 'Trabajos' -->
-        <div class="jobs">
-          <Jobs/>
-        </div>
-
-        <!-- Mis proyectos -->
-        <div class="projects">
-
-          <Projects />
-        </div>
-
-    </section>
+    <!-- Mis proyectos -->
+    <div class="projects">
+      <Projects />
+    </div>
+  </section>
 </template>
 
 <script>

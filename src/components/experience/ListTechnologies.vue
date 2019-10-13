@@ -1,30 +1,42 @@
 <template>
-    <section class="technologies container">
-        <span class="technologies__title">{{ $t('components.technologies.title') }}</span>
+  <section class="technologies container">
+    <span class="technologies__title">{{ $t('components.technologies.title') }}</span>
 
-      <div class="technologies__wrapper">
+    <div class="technologies__wrapper">
       <div class="technologies__wrapper__frontend">
         <template v-for="tech in technologies">
-          <div class="skill" :key="tech.name">
-            <span class="skill__name"><span class="skill__icon" :class="`${tech.id}`"/> {{ tech.name }}</span>
-            <div class="skill__progress-bar-container" >
-                <div class="skill__progress-bar-value" :style="`width: ${tech.level}%;`"></div>
+          <div
+            :key="tech.name"
+            class="skill">
+            <span class="skill__name"><span
+              class="skill__icon"
+              :class="`${tech.id}`" /> {{ tech.name }}</span>
+            <div class="skill__progress-bar-container">
+              <div
+                class="skill__progress-bar-value"
+                :style="`width: ${tech.level}%;`" />
             </div>
           </div>
         </template>
       </div>
-          <div class="technologies__wrapper__others">
+      <div class="technologies__wrapper__others">
         <template v-for="other in othersTechs">
-          <div class="skill" :key="other.name">
-            <span class="skill__name"><span class="skill__icon" :class="`${other.id}`"/> {{ other.name }}</span>
-            <div class="skill__progress-bar-container" >
-                <div class="skill__progress-bar-value" :style="`width: ${other.level}%;`"></div>
+          <div
+            :key="other.name"
+            class="skill">
+            <span class="skill__name"><span
+              class="skill__icon"
+              :class="`${other.id}`" /> {{ other.name }}</span>
+            <div class="skill__progress-bar-container">
+              <div
+                class="skill__progress-bar-value"
+                :style="`width: ${other.level}%;`" />
             </div>
           </div>
         </template>
-        </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

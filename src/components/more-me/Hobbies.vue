@@ -1,34 +1,50 @@
 <template>
-    <section class="hobbies container">
-        <span class="hobbies__title">{{ $t('components.hobbies.title') }}</span>
+  <section class="hobbies container">
+    <span class="hobbies__title">{{ $t('components.hobbies.title') }}</span>
 
-        <div class="hobbies__container">
-          <span>
-            <img src="../../assets/images/hobbies/sport.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/universe.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/films.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/videogame.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/travel.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/parachutist.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/programming.svg" width="100px"/>
-          </span>
-          <span>
-            <img src="../../assets/images/hobbies/karate.svg" width="100px"/>
-          </span>
-        </div>
-    </section>
+    <div class="hobbies__container">
+      <span>
+        <img
+          src="../../assets/images/hobbies/sport.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/universe.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/films.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/videogame.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/travel.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/parachutist.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/programming.svg"
+          width="100px">
+      </span>
+      <span>
+        <img
+          src="../../assets/images/hobbies/karate.svg"
+          width="100px">
+      </span>
+    </div>
+  </section>
 </template>
 
 <script>

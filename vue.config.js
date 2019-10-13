@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   productionSourceMap: false,
   runtimeCompiler: true,
@@ -28,7 +30,11 @@ module.exports = {
         minSize: 10000,
         maxSize: 250000
       }
-    }
+    },
+    plugins: [new HtmlWebpackPlugin({
+      template: 'public/index.html',
+      favicon: 'public/favicon.ico'
+    })]
   },
 
   chainWebpack: config => {
@@ -44,5 +50,5 @@ module.exports = {
       .options({ fix: true })
   },
 
-  lintOnSave: undefined
+  lintOnSave: true
 }
