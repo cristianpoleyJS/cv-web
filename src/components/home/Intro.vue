@@ -147,7 +147,7 @@ export default {
             &__content {
                 position: relative;
                 background-repeat: no-repeat;
-                background-image: url(https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/avatar-min-min.jpg?alt=media&token=434c1f9d-4980-4396-b673-0784ddf6432e);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/avatar.jpg?alt=media&token=d547502c-7cfc-4d62-8b16-69e963e9e23e);
                 background-size: cover;
                 background-position-y: -25px;
                 overflow: hidden;
