@@ -28,7 +28,7 @@ export default {
 <style scoped lang="scss">
 
     .about-me {
-        padding: 1rem 2rem 5rem;
+        padding: 1rem 2rem 2rem;
         color: #fff;
 
         &__desires {

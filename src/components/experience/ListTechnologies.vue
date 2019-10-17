@@ -113,7 +113,7 @@ export default {
         {
           name: 'Typescript',
           id: 'typescript',
-          level: 60
+          level: 50
         },
         {
           name: 'JQuery',
@@ -123,7 +123,7 @@ export default {
         {
           name: 'Node.js',
           id: 'node',
-          level: 45
+          level: 25
         },
         {
           name: 'Python',

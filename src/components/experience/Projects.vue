@@ -32,12 +32,12 @@ export default {
         {
           name: 'Nexlu',
           description: this.$i18n.t('components.projects.nexlu'),
-          image: 'https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/nexlu.png?alt=media&token=ef5e8d78-d1df-4c7f-8d7d-bb890577d8cc'
+          image: 'https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/nexlu.png?alt=media&token=167d0f3d-2e96-4509-9216-3e431f294918'
         },
         {
           name: 'Brisbox',
           description: this.$i18n.t('components.projects.brisbox'),
-          image: 'https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/brisbox.png?alt=media&token=f3b71c60-8af2-452b-a18a-dcbdd9776803'
+          image: 'https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/brisbox.png?alt=media&token=5e0ef69e-a810-4784-89e1-761a9e8c3066'
         }
       ]
     }
@@ -48,7 +48,7 @@ export default {
 <style scoped lang="scss">
     .projects {
 
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem 3rem;
 
         &__title {
             margin-bottom: 3rem;
