@@ -57,7 +57,7 @@ export default {
 <style scoped lang="scss">
   .hobbies {
 
-    padding: 6rem 1.5rem;
+    padding: 6rem 1.5rem 2rem;
     color: $secondFontColor;
 
     &__title {
@@ -76,6 +76,10 @@ export default {
           flex: 0 0 25%;
           text-align: center;
           margin-bottom: 3rem;
+
+          @include mq('phablet') {
+            flex: 0 0 45%;
+          }
         }
     }
   }

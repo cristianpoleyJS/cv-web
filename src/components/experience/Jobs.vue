@@ -73,7 +73,7 @@ export default {
 
 <style scoped lang="scss">
 .jobs {
-  padding: 6rem 1.5rem;
+  padding: 6rem 1.5rem 2rem;
   color: $secondFontColor;
 
   &__container {
@@ -85,7 +85,7 @@ export default {
       perspective: rem(1000);
       margin: 1%;
       width: rem(400);
-      min-height: rem(330);
+      min-height: rem(350);
 
       &__inner {
         position: relative;
