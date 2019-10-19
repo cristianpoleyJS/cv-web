@@ -11,7 +11,7 @@
       <span class="intro__info-personal--cv">
         <a
           target="_blank"
-          href="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/CristianPoleyCV.pdf?alt=media&token=106cdb84-90c1-48c2-9cec-aaf2d3af02e4">
+          href="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/CristianPoleyCV.pdf?alt=media&token=a480866c-5e6c-4338-bbb4-884e0f8da9a4">
           {{ $t('components.intro.download_pdf') }}
         </a>
       </span>
