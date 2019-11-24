@@ -6,41 +6,49 @@
     <div class="hobbies__container">
       <span>
         <img
+          alt="Sport"
           src="../../assets/images/hobbies/sport.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Universe"
           src="../../assets/images/hobbies/universe.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Films"
           src="../../assets/images/hobbies/films.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Videogames"
           src="../../assets/images/hobbies/videogame.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Travel"
           src="../../assets/images/hobbies/travel.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Parachutist"
           src="../../assets/images/hobbies/parachutist.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Programming"
           src="../../assets/images/hobbies/programming.svg"
           width="100px">
       </span>
       <span>
         <img
+          alt="Art martials"
           src="../../assets/images/hobbies/karate.svg"
           width="100px">
       </span>
