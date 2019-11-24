@@ -11,6 +11,7 @@
       <span class="intro__info-personal--cv">
         <a
           target="_blank"
+          rel="noopener"
           href="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/CristianPoleyCV.pdf?alt=media&token=ed82a161-0b38-42ec-9809-e0eac1f7d46b">
           {{ $t('components.intro.download_pdf') }}
         </a>
@@ -22,15 +23,23 @@
       <div class="intro__cristian__content">
         <div class="intro__cristian__content__bottom">
           <img
+            tabindex="0"
+            alt="Go to my Linkedin"
             src="@/assets/images/icons/linkedin.svg"
             @click="goTo('linkedin')">
           <img
+            tabindex="0"
+            alt="Go to my Medium"
             src="@/assets/images/icons/medium.svg"
             @click="goTo('medium')">
           <img
+            tabindex="0"
+            alt="Go to my Twitter"
             src="@/assets/images/icons/twitter.svg"
             @click="goTo('twitter')">
           <img
+            tabindex="0"
+            alt="Go to my GitHub"
             src="@/assets/images/icons/github.svg"
             @click="goTo('github')">
         </div>

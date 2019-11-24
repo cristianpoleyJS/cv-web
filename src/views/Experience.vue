@@ -33,7 +33,7 @@ export default {
       background-color: $bgBlack;
     }
     .projects {
-      background-color: #fff;
+      background-color: $white;
     }
   }
 </style>

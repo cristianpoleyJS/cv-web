@@ -30,7 +30,7 @@ export default {
   .more-me {
 
     .hobbies {
-      background-color: #fff;
+      background-color: $white;
     }
     .contact {
       background: $secondBgColor;
