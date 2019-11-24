@@ -33,7 +33,7 @@ export default {
         padding: 1rem 0;
         font-size: 0.7rem;
         text-align: center;
-        bottom: 0;
+        top: 100%;
         position: absolute;
         width: 100%;
         display: block;
