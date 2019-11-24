@@ -125,7 +125,7 @@ export default {
           }
         &--back {
           background-color: $secondBgColor;
-          color: #fff;
+          color: $white;
           transform: rotateY(180deg);
 
           &--title {

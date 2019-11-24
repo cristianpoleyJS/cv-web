@@ -18,6 +18,7 @@
       height="600"
       frameborder="0"
       style="border:0"
+      title="Google maps location me"
       :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAaI7KZ4pQg0REHaV2J6lXbg&key=${API_KEY_MAPS}`"
       allowfullscreen />
   </section>
@@ -38,7 +39,8 @@ export default {
 <style lang="scss">
 
     .contact__container a {
-        color: rgb(3, 155, 229) !important;
+        color: #fff !important;
+        font-weight: bold;
         text-decoration: none;
     }
 </style>
@@ -62,7 +64,7 @@ export default {
             margin-right: 3rem;
 
             > a {
-                color: #fff !important;
+                color: $white !important;
             }
         }
     }

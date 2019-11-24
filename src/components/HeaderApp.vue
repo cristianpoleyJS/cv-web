@@ -2,6 +2,8 @@
   <header class="header container">
     <!-- Icono de la web -->
     <img
+      tabindex="0"
+      alt="Header icon web"
       class="header__icon"
       src="../assets/images/icons/ico-cp.svg"
       @click="goHome()">
@@ -12,34 +14,45 @@
         <router-link
           :to="'/home'"
           class="hover-to-right">
-          <img src="@/assets/images/icons/home.svg"> <span>{{ $t('components.header_app.home') }}</span>
+          <img
+            alt="Icon home view"
+            src="@/assets/images/icons/home.svg"> <span>{{ $t('components.header_app.home') }}</span>
         </router-link>
       </li>
       <li>
         <router-link
           :to="'/experience'"
           class="hover-to-right">
-          <img src="@/assets/images/icons/experience.svg"> <span>{{ $t('components.header_app.experience') }}</span>
+          <img
+            alt="Icon experience view"
+            src="@/assets/images/icons/experience.svg"> <span>{{ $t('components.header_app.experience') }}</span>
         </router-link>
       </li>
       <li>
         <router-link
           :to="'/technologies'"
           class="hover-to-right">
-          <img src="@/assets/images/icons/technologies.svg"> <span>{{ $t('components.header_app.technologies') }}</span>
+          <img
+            alt="Icon technologies view"
+            src="@/assets/images/icons/technologies.svg"> <span>{{ $t('components.header_app.technologies') }}</span>
         </router-link>
       </li>
       <li>
         <router-link
           :to="'/more-me'"
           class="hover-to-right">
-          <img src="@/assets/images/icons/about-me.svg"> <span>{{ $t('components.header_app.more_me') }}</span>
+          <img
+            alt="Icon about me view"
+            src="@/assets/images/icons/about-me.svg"> <span>{{ $t('components.header_app.more_me') }}</span>
         </router-link>
       </li>
       <li
         class="language"
+        tabindex="0"
         @click="changeLanguage()">
-        <img src="@/assets/images/icons/translate.svg">
+        <img
+          alt="Icon change language"
+          src="@/assets/images/icons/translate.svg">
       </li>
     </ul>
   </header>
@@ -97,7 +110,7 @@ export default {
             > li {
 
                 a {
-                    color: #fff;
+                    color: $white;
                     text-decoration: none;
                     margin-right: 1rem;
                     padding: 1.1rem 0.5rem 1rem;

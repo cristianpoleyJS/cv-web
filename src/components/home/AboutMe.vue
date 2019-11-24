@@ -29,7 +29,7 @@ export default {
 
     .about-me {
         padding: 1rem 2rem 2rem;
-        color: #fff;
+        color: $white;
 
         &__desires {
             margin-top: 1rem;
@@ -41,7 +41,7 @@ export default {
                 flex: 0 0 45%;
 
                 > span {
-                    border-bottom: 1px solid #fff;
+                    border-bottom: 1px solid $white;
                     padding-bottom: 0.5rem;
                     font-style: italic;
                     margin-bottom: 1rem;

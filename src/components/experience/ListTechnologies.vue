@@ -101,11 +101,6 @@ export default {
           level: 60
         },
         {
-          name: 'Jest',
-          id: 'jest',
-          level: 30
-        },
-        {
           name: 'Meteor.js',
           id: 'meteor',
           level: 50
@@ -221,7 +216,8 @@ export default {
       display: inline-block;
       width: rem(20);
       height: rem(20);
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       vertical-align: middle;
       margin-right: 1rem;
 
@@ -229,7 +225,7 @@ export default {
         background-image: url('../../assets/images/technologies/js.svg');
       }
       &.vue {
-        background-image: url('../../assets/images/technologies/vue.png');
+        background-image: url('../../assets/images/technologies/vue.svg');
       }
       &.angular {
         background-image: url('../../assets/images/technologies/angular.svg');
@@ -238,22 +234,19 @@ export default {
         background-image: url('../../assets/images/technologies/react.svg');
       }
       &.firebase {
-        background-image: url('../../assets/images/technologies/firebase.png');
+        background-image: url('../../assets/images/technologies/firebase.svg');
       }
       &.ngrx {
         background-image: url('../../assets/images/technologies/ngrx.svg');
       }
       &.html {
-        background-image: url('../../assets/images/technologies/html.jpg');
+        background-image: url('../../assets/images/technologies/html.svg');
       }
       &.sass {
         background-image: url('../../assets/images/technologies/sass.svg');
       }
       &.cypress {
-        background-image: url('../../assets/images/technologies/cypress.png');
-      }
-      &.jest {
-        background-image: url('../../assets/images/technologies/jest.png');
+        background-image: url('../../assets/images/technologies/cypress.svg');
       }
       &.meteor {
         background-image: url('../../assets/images/technologies/meteor.svg');
@@ -265,22 +258,22 @@ export default {
         background-image: url('../../assets/images/technologies/jquery.svg');
       }
       &.node {
-        background-image: url('../../assets/images/technologies/node.jpg');
+        background-image: url('../../assets/images/technologies/node.svg');
       }
       &.python {
-        background-image: url('../../assets/images/technologies/python.png');
+        background-image: url('../../assets/images/technologies/python.svg');
       }
       &.gcp {
-        background-image: url('../../assets/images/technologies/gcp.png');
+        background-image: url('../../assets/images/technologies/gcp.svg');
       }
       &.git {
-        background-image: url('../../assets/images/technologies/git.png');
+        background-image: url('../../assets/images/technologies/git.svg');
       }
       &.github {
         background-image: url('../../assets/images/technologies/github.svg');
       }
       &.docker {
-        background-image: url('../../assets/images/technologies/docker.png');
+        background-image: url('../../assets/images/technologies/docker.svg');
       }
       &.redmine {
         background-image: url('../../assets/images/technologies/redmine.svg');
@@ -289,7 +282,7 @@ export default {
         background-image: url('../../assets/images/technologies/jira.svg');
       }
       &.scrum {
-        background-image: url('../../assets/images/technologies/scrum.png');
+        background-image: url('../../assets/images/technologies/scrum.svg');
       }
     }
 
@@ -298,11 +291,11 @@ export default {
       height: rem(8);
       border-radius: rem(20);
       margin: -1px;
-  -moz-transition: all 1s ease;
-  -moz-transition-delay: 1s;
-  -webkit-transition: all 1s ease;
-  -webkit-transition-delay: 1s;
-  transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -moz-transition-delay: 1s;
+      -webkit-transition: all 1s ease;
+      -webkit-transition-delay: 1s;
+      transition: all 1s ease;
     }
   }
 </style>
