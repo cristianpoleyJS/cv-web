@@ -9,8 +9,8 @@
       <p>{{ $t('components.contact.message2') }}</p>
       <p>
         <a
-          href="mailto:cripolgon@gmail.com"
-          target="_top">cripolgon@gmail.com</a>
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=cripolgon@gmail.com&tf=1"
+          target="_blank">cripolgon@gmail.com</a>
       </p>
     </div>
     <iframe

@@ -120,6 +120,9 @@ export default {
                             display: none;
                         }
                     }
+                    @include mq('phablet') {
+                        padding: 0;
+                    }
                 }
 
                 &.language {
