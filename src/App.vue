@@ -10,21 +10,16 @@
       mode="out-in">
       <router-view />
     </transition>
-
-    <!-- Footer -->
-    <FooterApp />
   </div>
 </template>
 <script>
 
 import HeaderApp from '@/components/HeaderApp'
-import FooterApp from '@/components/FooterApp'
 
 export default {
   name: 'Home',
   components: {
-    HeaderApp,
-    FooterApp
+    HeaderApp
   },
   watch: {
 

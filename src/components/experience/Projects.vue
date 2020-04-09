@@ -26,7 +26,6 @@
 export default {
   name: 'Projects',
   computed: {
-
     projects () {
       return [
         {
