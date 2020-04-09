@@ -139,6 +139,7 @@ export default {
         .study {
             margin: 1rem 0 0;
             width: 100%;
+            max-width: 100%;
 
             &:after {
               content: none;

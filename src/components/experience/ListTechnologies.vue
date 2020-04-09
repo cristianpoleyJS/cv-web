@@ -118,12 +118,12 @@ export default {
         {
           name: 'Node.js',
           id: 'node',
-          level: 25
+          level: 40
         },
         {
           name: 'Python',
           id: 'python',
-          level: 40
+          level: 27
         }
       ],
       othersTechs: [

@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from './views/Home.vue'
+import MoreMe from './views/MoreMe.vue'
+import Experience from './views/Experience.vue'
+import Technologies from './views/Technologies.vue'
 
 Vue.use(Router)
 
@@ -10,7 +14,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: () => import(/* webpackChunkName: "home" */ './views/Home.vue'),
+      component: Home,
       meta: {
         title: 'CV Cristian Poley - Home'
       }
@@ -18,7 +22,7 @@ export default new Router({
     {
       path: '/experience',
       name: 'Experience',
-      component: () => import(/* webpackChunkName: "experience" */ './views/Experience.vue'),
+      component: Experience,
       meta: {
         title: 'CV Cristian Poley - Experience'
       }
@@ -26,7 +30,7 @@ export default new Router({
     {
       path: '/more-me',
       name: 'MoreMe',
-      component: () => import(/* webpackChunkName: "moreme" */ './views/MoreMe.vue'),
+      component: MoreMe,
       meta: {
         title: 'CV Cristian Poley - More Me'
       }
@@ -34,7 +38,7 @@ export default new Router({
     {
       path: '/technologies',
       name: 'Technologies',
-      component: () => import(/* webpackChunkName: "technologies" */ './views/Technologies.vue'),
+      component: Technologies,
       meta: {
         title: 'CV Cristian Poley - Technologies'
       }

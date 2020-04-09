@@ -127,6 +127,7 @@ export default {
           background-color: $secondBgColor;
           color: $white;
           transform: rotateY(180deg);
+          overflow-y: scroll;
 
           &--title {
             font-family: Anton;
