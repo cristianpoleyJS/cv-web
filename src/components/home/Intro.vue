@@ -64,13 +64,13 @@ export default {
           url = 'https://www.linkedin.com/in/cristian-poley/'
           break
         case 'medium':
-          url = 'https://medium.com/@cripolgon'
+          url = 'https://medium.com/@cristianpoley'
           break
         case 'twitter':
           url = 'https://twitter.com/cristianpoley'
           break
         case 'github':
-          url = 'https://github.com/cripolgon'
+          url = 'https://github.com/cristianpoleyJS'
           break
       }
       window.open(url, '_blank')
