@@ -12,7 +12,7 @@
     <ul class="header__navigation">
       <li>
         <router-link
-          :to="'/home'"
+          :to="'/'"
           class="hover-to-right">
           <img
             alt="Icon home view"
@@ -68,7 +68,7 @@ export default {
      * Solo están disponibles los idiomas Ingles (en) y Español (es).
      */
     changeLanguage () {
-      this.$i18n.locale = this.$i18n.locale === 'es' ? 'en' : 'es'
+      // this.$i18n.locale = this.$i18n.locale === 'es' ? 'en' : 'es'
     },
 
     /**

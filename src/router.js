@@ -1,15 +1,13 @@
-import Vue from 'vue'
-import Router from 'vue-router'
 import Home from './views/Home.vue'
 import MoreMe from './views/MoreMe.vue'
 import Experience from './views/Experience.vue'
 import Technologies from './views/Technologies.vue'
+import { createRouter, createWebHistory } from 'vue-router'
 
-Vue.use(Router)
-
-export default new Router({
-  mode: 'history',
+const router = createRouter({
+  history: createWebHistory(),
   base: process.env.BASE_URL,
+  redirect: '/',
   routes: [
     {
       path: '/',
@@ -42,12 +40,8 @@ export default new Router({
       meta: {
         title: 'CV Cristian Poley - Technologies'
       }
-    },
-    {
-      path: '*',
-      redirect: {
-        name: 'Home'
-      }
     }
   ]
 })
+
+export default router
