@@ -3,7 +3,7 @@
   "description": "Personal page Cristian Poley - CV",
   "author": {
     "name": "Cristian Poley",
-    "email": "cripolgon@gmail.com"
+    "email": "cristianpoleygonzalez@gmail.com"
   },
   "version": "1.2.0",
   "private": true,
@@ -14,22 +14,22 @@
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "firebase": "^7.0.0",
-    "vue": "^2.6.10",
-    "vue-i18n": "^8.14.1",
-    "vue-router": "^3.0.3"
+    "core-js": "^3.6.5",
+    "firebase": "^7.17.2",
+    "vue": "^3.0.0-0",
+    "vue-i18n": "^9.0.0-alpha.13",
+    "vue-router": "^4.0.0-beta.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
     "@vue/eslint-config-standard": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0"
   }
 }

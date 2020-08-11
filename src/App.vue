@@ -5,16 +5,18 @@
     <!-- Cabecera -->
     <HeaderApp />
 
-    <transition
-      name="page"
-      mode="out-in">
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition
+        name="page"
+        mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 <script>
 
-import HeaderApp from '@/components/HeaderApp'
+import HeaderApp from '@/components/HeaderApp.vue'
 
 export default {
   name: 'Home',
