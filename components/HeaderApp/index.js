@@ -1,10 +1,11 @@
+import Links from 'components/Links'
+
 export default function HeaderApp () {
   return (
       <>
-        Logo
-        Portfolio
-        Jobs
-        Contact
+        <header>
+          <Links />
+        </header>
       </>
   )
 }
