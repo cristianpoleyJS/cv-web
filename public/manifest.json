@@ -1,0 +1,16 @@
+{
+    "manifest_version": 1,
+    "name": "Cristian Poley",
+    "short_name": "Cristian Poley",
+    "version": "2.0.0",
+    "start_url": ".",
+    "default_locale": "es",
+    "description": "Manifest Cristian Poley",
+    "icons": [],
+    "author": "Cristian Poley (cristianpoleygonzalez@gmail.com)",
+    "file_system_provider_capabilities": {
+      "configurable": true,
+      "multiple_mounts": true,
+      "source": "network"
+    }
+  }
