@@ -3,19 +3,18 @@ import Links from 'components/Links'
 export default function FooterApp () {
   return (
     <>
-      <footer>
+      <footer
+        data-aos="fade-up"
+        data-aos-duration="1000">
         <hr/>
         <Links />
         <section>
           <div>
-            <a href="/politics-privacy">Politica de privacidad</a><br/>
-            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=cristianpoleygonzalez@gmail.com&tf=1" target="_blank" rel="noreferrer">
-              <strong>cristianpoleygonzalez@gmail.com</strong>
-            </a>
+            {/* <a href="/politics-privacy">Politica de privacidad</a><br/> */}
+            <strong>cristianpoleygonzalez@gmail.com</strong>
           </div>
-          <div>
-            2021 ® Cristian Poley<br/>
-            All rights reserved
+          <div className="footer__right">
+            2021 © Cristian Poley
           </div>
         </section>
       </footer>
@@ -32,6 +31,23 @@ export default function FooterApp () {
           display: flex;
           justify-content: space-between;
           align-items: center;
+        }
+
+        .footer__right {
+          text-align: right;
+        }
+        @media (max-width: 768px) {
+          section {
+            display: inline-block;
+            width: 100%;
+          }
+          .footer__right {
+            text-align: left;
+            margin-top: 1rem;
+          }
+          footer {
+            padding-bottom: 5rem;
+          }
         }
       `}
       </style>

@@ -1,19 +1,31 @@
+import { rem } from 'styles/utils'
+
 export default function ContactUs () {
+  const clickOpenContact = () => {
+    window.location.href = 'mailto:cristianpoleygonzalez@gmail.com?subject=Propuesta%20trabajo%20[NOMBRE_EMPRESA]'
+  }
   return (
     <>
-      <section>
-        <h3>Puedes concactar conmigo sin problema pulsando aquí →</h3>
-        <button>Contacta</button>
+      <section
+        id="contact"
+        data-aos="fade-up"
+        data-aos-duration="1000">
+        <h3>Puedes contactar conmigo cuando quieras pulsando aquí →</h3>
+        <button
+          className="secondary-button"
+          onClick={clickOpenContact}>
+            Contacta
+        </button>
       </section>
       <style jsx>{`
         section {
           width: 100%;
           background-color: var(--palette--secondary-background-color);
-          height: 120px;
-          padding: 0 40px;
+          height: ${rem(120)};
+          padding: 0 ${rem(40)};
           display: flex;
           justify-content: space-between;
-          margin: 3rem 0 1rem;
+          margin-bottom: 1rem;
         }        
 
         h3, button {
@@ -22,6 +34,15 @@ export default function ContactUs () {
 
         h3 {
           color: var(--color--white);
+        }
+
+        @media (max-width: 768px) {
+          h3 {
+            display: none;
+          }
+          button {
+            width: 100%;
+          }
         }
       `}
       </style>

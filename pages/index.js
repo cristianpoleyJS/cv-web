@@ -4,7 +4,6 @@ import ContactUs from 'components/ContactUs'
 import Jobs from 'components/Jobs'
 import Libraries from 'components/Libraries'
 import MainInfo from 'components/MainInfo'
-// import Portfolio from 'components/Portfolio'
 
 export default function Home () {
   return (
@@ -12,8 +11,7 @@ export default function Home () {
       <MainInfo />
       <Jobs />
       <Brief />
-      {/* <Portfolio /> */}
-      <Libraries />
+      <Libraries/>
       <Articles />
       <ContactUs />
     </>

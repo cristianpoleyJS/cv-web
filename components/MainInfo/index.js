@@ -1,3 +1,4 @@
+import { rem } from 'styles/utils'
 import TypeIt from 'typeit-react'
 
 export default function MainInfo () {
@@ -18,20 +19,23 @@ export default function MainInfo () {
               waitUntilVisible: true
             }}
           />
-          <a href="https://storage.googleapis.com/cristian-poley-webs.appspot.com/CristianPoleyCV.pdf" target="_blank" rel="noreferrer">
+          <a
+            href="https://storage.googleapis.com/cristian-poley-webs.appspot.com/CristianPoleyCV.pdf"
+            target="_blank"
+            rel="noreferrer">
             <button className="primary-button">
-              Download CV
+              Descargar CV
             </button>
           </a>
         </div>
         <div className="main-info__right">
-          <img src="https://firebasestorage.googleapis.com/v0/b/cristian-poley-webs.appspot.com/o/avatar.jpg?alt=media&token=d547502c-7cfc-4d62-8b16-69e963e9e23e" />
+          <img src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.png" />
         </div>
       </section>
       <style jsx>{`
         h1 {
           text-transform: uppercase;
-          line-height: 100px;
+          line-height: ${rem(100)};
           margin-bottom: 1rem;
         }
 
@@ -42,18 +46,39 @@ export default function MainInfo () {
 
         .main-info {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 80px;
-          grid-auto-rows: minmax(100px, auto);
+          grid-template-columns: calc(60% - 5rem) calc(40% - 5rem);
+          grid-gap: ${rem(160)};
+          grid-auto-rows: minmax(${rem(100)}, auto);
           align-items: center;
           margin-top: 2rem;
         }
         .main-info__right img {
-          width: 400px;
-          border: 12px solid #fff;
-          border-radius: 6px;
-          box-shadow: 0px 0px 2px 1px #f5f5f5;
-          border-bottom-right-radius: 60px;
+          width: 100%;
+          border: ${rem(12)} solid #fff;
+          border-radius: ${rem(6)};
+          box-shadow: 0 0 ${rem(2)} ${rem(4)} #f5f5f5;
+          border-bottom-right-radius: ${rem(60)};
+        }
+
+        @media (max-width: 1024px) {
+          .main-info {
+            display: inline-block;
+          }
+          h1 {
+            font-size: calc(7.5rem - 4vh);
+          }
+          .main-info__right {
+            display: none;
+          }
+        }
+        @media (max-width: 768px) {
+          h1 {
+            font-size: calc(5.5rem - 4vh);
+            line-height: 4rem;
+          }
+          h3 {
+            font-size: 1.3rem;
+          }
         }
       `}</style>
     </>
