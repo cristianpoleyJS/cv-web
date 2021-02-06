@@ -23,7 +23,9 @@ export default function Libraries () {
   ]
   return (
     <>
-      <section data-aos="fade-up" data-aos-duration="1000">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000">
         <h2>Mis últimas librerías</h2>
         <div>
           {libraries.map(({ id, url, title, description, tech, count }) => (

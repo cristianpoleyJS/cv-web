@@ -9,12 +9,12 @@ export default function Brief () {
     },
     {
       id: 2,
-      count: '6',
+      count: '7',
       title: 'Artículos'
     },
     {
       id: 3,
-      count: '7',
+      count: '8',
       title: 'Proyectos'
     },
     {
@@ -25,7 +25,9 @@ export default function Brief () {
   ]
   return (
     <>
-      <section data-aos="fade-up" data-aos-duration="1000">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000">
         {briefs.map(({ id, count, title }) => (
           <div key={id}>
             <num>{count}</num>

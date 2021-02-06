@@ -46,7 +46,7 @@ export default function FooterApp () {
             margin-top: 1rem;
           }
           footer {
-            padding-bottom: 5rem;
+            padding-bottom: 3rem;
           }
         }
       `}

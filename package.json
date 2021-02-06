@@ -6,7 +6,6 @@
     "email": "cristianpoleygonzalez@gmail.com"
   },
   "version": "2.0.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +13,8 @@
     "lint": "eslint --fix"
   },
   "dependencies": {
-    "firebase": "^8.2.3",
+    "aos": "2.3.4",
+    "firebase": "8.2.3",
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",

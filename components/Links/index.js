@@ -10,8 +10,8 @@ export default function Links () {
         <navbar>
             <CPIcon fill="#fd9a00" width="50px"/>
             <div className="navbar__left">
-              <a href="#jobs">Jobs</a>
-              <a href="#contact">Contact</a>
+              <a onClick={() => document.getElementById('jobs').scrollIntoView({ block: 'start', behavior: 'smooth' })}>Trabajos</a>
+              <a onClick={() => document.getElementById('contact').scrollIntoView({ block: 'start', behavior: 'smooth' })}>Contacta</a>
             </div>
             <div className="navbar__right">
               <a
