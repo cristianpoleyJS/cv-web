@@ -1,3 +1,4 @@
+import { rem } from 'styles/utils'
 import Links from 'components/Links'
 
 export default function FooterApp () {
@@ -23,7 +24,7 @@ export default function FooterApp () {
           padding-bottom: 3rem;
         }
         footer hr {
-          border: 1px solid var(--palette--weighted-border-color);
+          border: ${rem(1)} solid var(--palette--weighted-border-color);
           opacity: 0.5;
           margin: 2rem 0;
         }

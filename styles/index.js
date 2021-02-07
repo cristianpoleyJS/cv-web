@@ -85,6 +85,6 @@ export default css.global`
         font-size: 1rem;
         font-weight: 600;
         color: var(--palette--tertiary-text-color);
-        border: 1px solid var(--palette--main-background-color);
+        border: ${rem(1)} solid var(--palette--main-background-color);
     }
 `

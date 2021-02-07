@@ -73,7 +73,7 @@ export default function Libraries () {
           padding: 2.5vh 5%;
           display: inline-block;
           border-radius: ${rem(5)};
-          border: 1px solid rgb(0, 0, 0, 0.08);
+          border: ${rem(1)} solid rgb(0, 0, 0, 0.08);
           box-shadow: 0 0 0 rgb(0, 0, 0, 0);
           transition: var(--transition);
           transform: scale(1);

@@ -65,7 +65,7 @@ export default function Links () {
           .navbar__right {
             text-align: right;
             display: grid;
-            grid-template-columns: repeat(3, 30px);
+            grid-template-columns: repeat(3, ${rem(30)});
             grid-gap: ${rem(8)};
           }
 

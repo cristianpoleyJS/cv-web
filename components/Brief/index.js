@@ -5,7 +5,7 @@ export default function Brief () {
     {
       id: 1,
       count: '2',
-      title: 'Librerias'
+      title: 'Librerías'
     },
     {
       id: 2,
@@ -40,17 +40,17 @@ export default function Brief () {
       <style jsx>{`
         section {
           display: grid;
+          align-items: center;
           grid-template-columns: repeat(4, 1fr);
           grid-auto-rows: minmax(${rem(100)}, auto);
-          align-items: center;
           max-width: ${rem(1024)};
           margin: 0 auto;
         }
 
         section div {
           text-align: center;
-          padding: ${rem(26)} 0;
-          height: ${rem(112)};
+          padding: 2rem 0 ${rem(40)} 0;
+          height: ${rem(150)};
           background-color: var(--palette--secondary-background-color);
         }
         section div:last-child {
@@ -64,12 +64,20 @@ export default function Brief () {
         div num {
           display: block;
           font-weight: 600;
-          font-size: ${rem(24)};
+          font-size: ${rem(28)};
+        }
+        section div span {
+          font-size: ${rem(18)};
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
+          section {
+            display: block;
+          }
           section div {
             padding-top: ${rem(14)};
+            padding-bottom: 0 !important;
+            height: 7rem;
           }
         }
       `}
