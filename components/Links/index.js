@@ -5,13 +5,16 @@ import LinkedinIcon from 'components/Icons/LinkedinIcon'
 import MediumIcon from 'components/Icons/MediumIcon'
 
 export default function Links () {
+  const goTo = (id) => {
+    document.getElementById(id).scrollIntoView({ block: 'start', behavior: 'smooth' })
+  }
   return (
         <>
         <navbar>
             <CPIcon fill="#fd9a00" width="50px"/>
             <div className="navbar__left">
-              <a onClick={() => document.getElementById('jobs').scrollIntoView({ block: 'start', behavior: 'smooth' })}>Trabajos</a>
-              <a onClick={() => document.getElementById('contact').scrollIntoView({ block: 'start', behavior: 'smooth' })}>Contacta</a>
+              <a onClick={() => goTo('jobs')}>Trabajos</a>
+              <a onClick={() => goTo('contact')}>Contacta</a>
             </div>
             <div className="navbar__right">
               <a
@@ -69,7 +72,7 @@ export default function Links () {
             grid-gap: ${rem(8)};
           }
 
-          @media (max-width: 1024px) {
+          @media (max-width: ${rem(1024)}) {
             navbar {
               display: inline-block;
               width: 100%;

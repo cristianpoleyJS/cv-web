@@ -36,7 +36,7 @@ export default function ContactUs () {
           color: var(--color--white);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: ${rem(768)}) {
           h3 {
             display: none;
           }

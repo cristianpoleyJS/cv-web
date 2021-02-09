@@ -24,12 +24,12 @@ export default function AppLayout ({ children }) {
           margin: 0 auto;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: ${rem(1024)}) {
           main {
             padding: 0 ${rem(40)};
           }
         }
-        @media (max-width: 768px) {
+        @media (max-width: ${rem(768)}) {
           main {
             padding: 0 ${rem(24)};
           }

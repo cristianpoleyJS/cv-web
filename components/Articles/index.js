@@ -1,36 +1,17 @@
+import { getDataAirtable } from 'utils'
 import { rem } from 'styles/utils'
+import { useState, useEffect } from 'react'
+
+const BASE_ARTICLES = 'appp9mpEjaGs4jv39'
+const TITLE_TABLE = 'Articles'
 
 export default function Articles () {
-  const articles = [
-    {
-      id: 2,
-      title: 'Frontend en 2021',
-      url: 'https://cristianpoley.medium.com/frontend-en-2021-acdc3f9889bc',
-      description: '¿Tienes dudas sobre por dónde tirar este año?, ¡veamos que nos depara 2021!',
-      photo: 'https://storage.googleapis.com/cristian-poley-webs.appspot.com/articles/frontend2021.png'
-    },
-    {
-      id: 1,
-      title: 'ECMAScript 2021',
-      url: 'https://cristianpoley.medium.com/ecmascript-2021-17aaeb1d35c7',
-      description: 'Novedades de lo que viene la nueva versión ECMAScript.',
-      photo: 'https://storage.googleapis.com/cristian-poley-webs.appspot.com/articles/ecma2021.jpeg'
-    },
-    {
-      id: 3,
-      title: 'One Piece - Vue 3',
-      url: 'https://octuweb.com/vue3/',
-      description: '¿Con ganas de conocer que nos trae la nueva versión de Vue? En este artículo hacemos un repaso sobre ella.',
-      photo: 'https://storage.googleapis.com/cristian-poley-webs.appspot.com/articles/vue3.png'
-    },
-    {
-      id: 4,
-      title: 'Angular vs React',
-      url: 'https://cristianpoley.medium.com/angular-vs-react-e9221e26892d',
-      description: 'En esta guía vamos a ver cada una de estas tecnologías Front y las diferencias entre ellas, para que puedas elegir la mejor opción para el desarrollo de tus aplicaciones Front-end con JavaScript.',
-      photo: 'https://storage.googleapis.com/cristian-poley-webs.appspot.com/articles/angularvsreact.jpeg'
-    }
-  ]
+  const [articles, setArticles] = useState([])
+
+  useEffect(async () => {
+    const articles = await getDataAirtable(BASE_ARTICLES, TITLE_TABLE)
+    setArticles(articles)
+  }, [])
   return (
     <>
       <section
@@ -133,7 +114,7 @@ export default function Articles () {
           word-wrap: break-word;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: ${rem(768)}) {
           .article {
             flex: 1 0 100%;
             width: 100%;

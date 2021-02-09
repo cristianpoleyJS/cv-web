@@ -37,7 +37,7 @@ export default function FooterApp () {
         .footer__right {
           text-align: right;
         }
-        @media (max-width: 768px) {
+        @media (max-width: ${rem(768)}) {
           section {
             display: inline-block;
             width: 100%;

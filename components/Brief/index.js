@@ -1,37 +1,26 @@
+import { getDataAirtable } from 'utils'
 import { rem } from 'styles/utils'
+import { useState, useEffect } from 'react'
+
+const BASE_BRIEF = 'appLIDZ3cqhvo0OAA'
+const TITLE_TABLE = 'Brief'
 
 export default function Brief () {
-  const briefs = [
-    {
-      id: 1,
-      count: '2',
-      title: 'Librerías'
-    },
-    {
-      id: 2,
-      count: '7',
-      title: 'Artículos'
-    },
-    {
-      id: 3,
-      count: '8',
-      title: 'Proyectos'
-    },
-    {
-      id: 4,
-      count: '+5',
-      title: 'Años de experiencia'
-    }
-  ]
+  const [brief, setBrief] = useState([])
+
+  useEffect(async () => {
+    const brief = await getDataAirtable(BASE_BRIEF, TITLE_TABLE)
+    setBrief(brief)
+  }, [])
   return (
     <>
       <section
         data-aos="fade-up"
         data-aos-duration="1000">
-        {briefs.map(({ id, count, title }) => (
+        {brief.map(({ id, count, title }) => (
           <div key={id}>
-            <num>{count}</num>
-            <span>
+            <span className="number">{count}</span>
+            <span className="title">
               {title}
             </span>
           </div>
@@ -61,16 +50,16 @@ export default function Brief () {
           color: var(--color--white);
         }
 
-        div num {
+        div span.number {
           display: block;
           font-weight: 600;
           font-size: ${rem(28)};
         }
-        section div span {
+        section div span.title {
           font-size: ${rem(18)};
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: ${rem(640)}) {
           section {
             display: block;
           }

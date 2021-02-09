@@ -60,7 +60,7 @@ export default function MainInfo () {
           border-bottom-right-radius: ${rem(60)};
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: ${rem(1024)}) {
           .main-info {
             display: inline-block;
           }
@@ -71,7 +71,7 @@ export default function MainInfo () {
             display: none;
           }
         }
-        @media (max-width: 768px) {
+        @media (max-width: ${rem(768)}) {
           h1 {
             font-size: calc(5.5rem - 4vh);
             line-height: 4rem;

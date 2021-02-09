@@ -1,26 +1,19 @@
-import DownloadIcon from 'components/Icons/DownloadIcon'
-import CodeIcon from 'components/Icons/CodeIcon'
+import { getDataAirtable } from 'utils'
 import { rem } from 'styles/utils'
+import { useState, useEffect } from 'react'
+import CodeIcon from 'components/Icons/CodeIcon'
+import DownloadIcon from 'components/Icons/DownloadIcon'
+
+const BASE_LIBRARIES = 'appfff5XrWkjkHJET'
+const TITLE_TABLE = 'Libraries'
 
 export default function Libraries () {
-  const libraries = [
-    {
-      id: 1,
-      description: '¡Con este componente 🧰 puedes agregar una línea de tiempo a su aplicación Vue3 para indicar sus objetivos logrados!',
-      url: 'https://www.npmjs.com/package/vue-next-timeline',
-      tech: 'JavaScript',
-      title: 'vue-next-timeline',
-      count: '+1k'
-    },
-    {
-      id: 2,
-      description: '🔍 Busca y elige entre los resultados del endpoint que le indiques al componente.',
-      url: 'https://www.npmjs.com/package/vue-next-typeahead',
-      tech: 'JavaScript',
-      title: 'vue-next-typeahead',
-      count: '+400'
-    }
-  ]
+  const [libraries, setLibraries] = useState([])
+
+  useEffect(async () => {
+    const libraries = await getDataAirtable(BASE_LIBRARIES, TITLE_TABLE)
+    setLibraries(libraries)
+  }, [])
   return (
     <>
       <section

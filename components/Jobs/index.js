@@ -45,12 +45,12 @@ export default function Jobs () {
           span {
             text-align: center;
           }
-          @media (max-width: 1024px) {
+          @media (max-width: ${rem(1024)}) {
             section {
               grid-template-columns: repeat(2, 1fr);
             }
           }
-          @media (max-width: 640px) {
+          @media (max-width: ${rem(640)}) {
             section {
               grid-template-columns: repeat(1, 1fr);
             }

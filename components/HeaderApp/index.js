@@ -1,4 +1,5 @@
 import Links from 'components/Links'
+import { rem } from 'styles/utils'
 
 export default function HeaderApp () {
   return (
@@ -7,7 +8,7 @@ export default function HeaderApp () {
           <Links />
         </header>
         <style jsx>{`
-          @media (max-width: 1024px) {
+          @media (max-width: ${rem(1024)}) {
             header {
               padding-top: 2rem;
             }
