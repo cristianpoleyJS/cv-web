@@ -1,10 +1,9 @@
 import Airtable from 'airtable'
-import apiKey from '_api-key'
 
 export const getDataAirtable = async (baseKey, baseName) => {
   const res = []
   await new Promise((resolve) => {
-    const base = new Airtable({ apiKey }).base(baseKey)
+    const base = new Airtable({ apiKey: process.env.API_KEY_AIRTABLE }).base(baseKey)
     base(baseName)
       .select()
       .firstPage((err, records) => {
