@@ -11,26 +11,26 @@ export default function Jobs () {
         <span>
           <SngularIcon
             fill="#b3b3b3"
-            width="128px"
-            height="40px"/>
+            width={rem(128)}
+            height={rem(40)}/>
         </span>
         <span>
           <IngeniovaSystemsIcon
             fill="#b3b3b3"
-            width="144px"
-            height="65px"/>
+            width={rem(144)}
+            height={rem(65)}/>
         </span>
         <span>
           <WellnessTelecomIcon
             fill="#b3b3b3"
-            width="200px"
-            height="40px"/>
+            width={rem(200)}
+            height={rem(40)}/>
         </span>
         <span>
           <SopraSteriaIcon
             fill="#b3b3b3"
-            width="200px"
-            height="40px"/>
+            width={rem(200)}
+            height={rem(40)}/>
         </span>
       </section>
       <style jsx>{`

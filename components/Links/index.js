@@ -11,7 +11,7 @@ export default function Links () {
   return (
         <>
         <navbar>
-            <CPIcon fill="#fd9a00" width="50px"/>
+            <CPIcon fill="#fd9a00" width={rem(50)}/>
             <div className="navbar__left">
               <a onClick={() => goTo('jobs')}>Trabajos</a>
               <a onClick={() => goTo('contact')}>Contacta</a>
@@ -21,19 +21,19 @@ export default function Links () {
                 href="https://www.linkedin.com/in/cristian-poley/"
                 target="_blank"
                 rel="noreferrer">
-                  <LinkedinIcon fill="#fd9a00" width="28px"/>
+                  <LinkedinIcon fill="#fd9a00" width={rem(28)}/>
               </a>
               <a
                 href="https://github.com/cristianpoleyJS"
                 target="_blank"
                 rel="noreferrer">
-                  <GithubIcon fill="#fd9a00" width="28px" opacity="0.8"/>
+                  <GithubIcon fill="#fd9a00" width={rem(28)} opacity="0.8"/>
               </a>
               <a
                 href="https://medium.com/@cristianpoley"
                 target="_blank"
                 rel="noreferrer">
-                  <MediumIcon fill="#fd9a00" width="28px" opacity="0.5"/>
+                  <MediumIcon fill="#fd9a00" width={rem(28)} opacity="0.5"/>
               </a>
             </div>
         </navbar>
