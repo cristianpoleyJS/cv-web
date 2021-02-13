@@ -30,7 +30,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-_api-key.js
 
 # vercel
 .vercel
