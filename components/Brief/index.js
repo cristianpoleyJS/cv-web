@@ -1,17 +1,6 @@
-import { getDataAirtable } from 'utils'
 import { rem } from 'styles/utils'
-import { useState, useEffect } from 'react'
 
-const BASE_BRIEF = 'appLIDZ3cqhvo0OAA'
-const TITLE_TABLE = 'Brief'
-
-export default function Brief () {
-  const [brief, setBrief] = useState([])
-
-  useEffect(async () => {
-    const brief = await getDataAirtable(BASE_BRIEF, TITLE_TABLE)
-    setBrief(brief)
-  }, [])
+export default function Brief ({ brief }) {
   return (
     <>
       <section

@@ -1,17 +1,6 @@
-import { getDataAirtable } from 'utils'
 import { rem } from 'styles/utils'
-import { useState, useEffect } from 'react'
 
-const BASE_ARTICLES = 'appp9mpEjaGs4jv39'
-const TITLE_TABLE = 'Articles'
-
-export default function Articles () {
-  const [articles, setArticles] = useState([])
-
-  useEffect(async () => {
-    const articles = await getDataAirtable(BASE_ARTICLES, TITLE_TABLE)
-    setArticles(articles)
-  }, [])
+export default function Articles ({ articles }) {
   return (
     <>
       <section

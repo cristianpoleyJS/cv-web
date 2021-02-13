@@ -1,19 +1,8 @@
-import { getDataAirtable } from 'utils'
 import { rem } from 'styles/utils'
-import { useState, useEffect } from 'react'
 import CodeIcon from 'components/Icons/CodeIcon'
 import DownloadIcon from 'components/Icons/DownloadIcon'
 
-const BASE_LIBRARIES = 'appfff5XrWkjkHJET'
-const TITLE_TABLE = 'Libraries'
-
-export default function Libraries () {
-  const [libraries, setLibraries] = useState([])
-
-  useEffect(async () => {
-    const libraries = await getDataAirtable(BASE_LIBRARIES, TITLE_TABLE)
-    setLibraries(libraries)
-  }, [])
+export default function Libraries ({ libraries }) {
   return (
     <>
       <section
@@ -31,8 +20,8 @@ export default function Libraries () {
               <div className="library__title">
                 <span className="library__info__downloads__image">
                   <CodeIcon
-                    width="22px"
-                    height="22px"
+                    width={rem(22)}
+                    height={rem(22)}
                     fill="white" />
                 </span> {title}
               </div>
@@ -42,7 +31,9 @@ export default function Libraries () {
               <div className="library__info">
                 <span>{tech}:</span>
                 <span className="library__info__downloads">
-                  {count} <span className="library__info__downloads__image"><DownloadIcon width="12px" height="11px" fill="white" /></span>
+                  {count} <span className="library__info__downloads__image">
+                    <DownloadIcon width={rem(12)} height={rem(11)} fill="white" />
+                  </span>
                 </span>
               </div>
             </a>
