@@ -10,8 +10,8 @@ export default function AppLayout ({ children }) {
         <Head>
             <title>Cristian Poley</title>
             <link rel="icon" href="/favicon.ico" />
-            <link rel="preload" href="/fonts.css" as="style" />
             <meta name="viewport" content="width=device-width"/>
+            <meta name="Description" content="This is my personal website to know my professional profile and my latest news."></meta>
         </Head>
         <HeaderApp />
           {children}
