@@ -1,24 +1,31 @@
+const RULES = {
+  OFF: 'off',
+  WARN: 'warn',
+  ON: 'on'
+}
+
 module.exports = {
-  root: true,
   env: {
+    browser: true,
+    es2021: true,
     node: true
   },
-  'extends': [
-    'plugin:vue/recommended',
-    '@vue/standard'
+  extends: [
+    'plugin:react/recommended',
+    'standard'
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 12,
+    sourceType: 'module'
+  },
+  plugins: [
+    'react'
   ],
   rules: {
-    'vue/html-closing-bracket-newline': [
-      'error',
-      {
-        singleline: 'never',
-        multiline: 'never'
-      }
-    ],
-    'vue/valid-v-html': 'off',
-    'vue/no-v-html': 'off'
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
+    'react/prop-types': RULES.OFF,
+    'react/react-in-jsx-scope': RULES.OFF
   }
 }
