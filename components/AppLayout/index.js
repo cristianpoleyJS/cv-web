@@ -10,7 +10,8 @@ export default function AppLayout ({ children }) {
         <Head>
             <title>Cristian Poley</title>
             <link rel="icon" href="/favicon.ico" />
-            <meta name="viewport" content="width=device-width, user-scalable=no"/>
+            <link rel="preload" href="/fonts.css" as="style" />
+            <meta name="viewport" content="width=device-width"/>
         </Head>
         <HeaderApp />
           {children}

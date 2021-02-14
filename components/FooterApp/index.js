@@ -11,7 +11,6 @@ export default function FooterApp () {
         <Links />
         <section>
           <div>
-            {/* <a href="/politics-privacy">Politica de privacidad</a><br/> */}
             <strong>cristianpoleygonzalez@gmail.com</strong>
           </div>
           <div className="footer__right">

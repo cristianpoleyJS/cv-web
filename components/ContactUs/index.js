@@ -36,6 +36,10 @@ export default function ContactUs () {
           color: var(--color--white);
         }
 
+        button {
+          text-transform: uppercase;
+        }
+
         @media (max-width: ${rem(768)}) {
           h3 {
             display: none;

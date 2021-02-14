@@ -15,7 +15,7 @@ export default function MainInfo () {
               nextStringDelay: 3000,
               speed: 60,
               startDelay: 500,
-              strings: ['Software Engineer', 'Senior Front-end Engineer', 'JavaScript Lover'],
+              strings: ['Senior Front-end', 'Software Engineer', 'JavaScript Lover'],
               waitUntilVisible: true
             }}
           />
@@ -29,7 +29,7 @@ export default function MainInfo () {
           </a>
         </div>
         <div className="main-info__right">
-          <img src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.png" />
+          <img src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.webp" />
         </div>
       </section>
       <style jsx>{`

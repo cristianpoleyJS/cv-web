@@ -56,11 +56,6 @@ export default function Links () {
             font-size: ${rem(18)};
           }
 
-          .navbar__right a {
-            width: ${rem(28)};
-            display: grid;
-          }
-
           .navbar__left a:hover {
             color: var(--palette--weighted-border-color);
           }
@@ -68,8 +63,13 @@ export default function Links () {
           .navbar__right {
             text-align: right;
             display: grid;
-            grid-template-columns: repeat(3, ${rem(30)});
-            grid-gap: ${rem(8)};
+            grid-template-columns: repeat(3, ${rem(28)});
+            grid-gap: ${rem(12)};
+          }
+
+          .navbar__right a {
+            width: ${rem(28)};
+            display: inline-grid;
           }
 
           @media (max-width: ${rem(1024)}) {
