@@ -5,7 +5,7 @@
     "name": "Cristian Poley",
     "email": "cristianpoleygonzalez@gmail.com"
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -5,7 +5,11 @@ export const getDataAirtable = async (baseKey, baseName) => {
   await new Promise((resolve) => {
     const base = new Airtable({ apiKey: process.env.NEXT_PUBLIC_API_KEY_AIRTABLE }).base(baseKey)
     base(baseName)
-      .select()
+      .select({
+        sort: [
+          { field: 'ID', direction: 'asc' }
+        ]
+      })
       .firstPage((err, records) => {
         if (err) { console.error(err); return }
         records.forEach((record) => {
