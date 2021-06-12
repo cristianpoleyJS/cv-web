@@ -1,5 +1,7 @@
 import 'styles/fonts.css'
+import 'styles/styleCarousel.css'
 import 'aos/dist/aos.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { useEffect } from 'react'
 import AOS from 'aos'
 import AppLayout from 'components/AppLayout'

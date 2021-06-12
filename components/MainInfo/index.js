@@ -29,7 +29,7 @@ export default function MainInfo () {
           </a>
         </div>
         <div className="main-info__right">
-          <img src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.webp" />
+          <img src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.webp" decoding="async" loading="lazy" />
         </div>
       </section>
       <style jsx>{`
