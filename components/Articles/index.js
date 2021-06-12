@@ -1,3 +1,4 @@
+import stylesSections from 'styles/sections'
 import { rem } from 'styles/utils'
 
 export default function Articles ({ articles }) {
@@ -28,13 +29,8 @@ export default function Articles ({ articles }) {
           ))}
         </div>
       </section>
+      <style jsx>{stylesSections}</style>
       <style jsx>{`
-        section  {
-          margin: 2rem 0;
-        }
-        h2 {
-          margin-bottom: 1rem;
-        }
         div {
           display: flex;
           flex-wrap: wrap;
