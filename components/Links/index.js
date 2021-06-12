@@ -14,7 +14,7 @@ export default function Links () {
             <CPIcon fill="#fd9a00" width={rem(50)}/>
             <div className="navbar__left">
               <a onClick={() => goTo('jobs')}>Trabajos</a>
-              <a onClick={() => goTo('contact')}>Contacta</a>
+              <a onClick={() => goTo('portfolio')}>Portfolio</a>
             </div>
             <div className="navbar__right">
               <a

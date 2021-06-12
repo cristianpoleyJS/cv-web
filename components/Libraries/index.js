@@ -1,3 +1,4 @@
+import stylesSections from 'styles/sections'
 import { rem } from 'styles/utils'
 import CodeIcon from 'components/Icons/CodeIcon'
 import DownloadIcon from 'components/Icons/DownloadIcon'
@@ -40,13 +41,8 @@ export default function Libraries ({ libraries }) {
           ))}
         </div>
       </section>
+      <style jsx>{stylesSections}</style>
       <style jsx>{`
-        section {
-          padding: 2rem 0;
-        }
-        h2 {
-          margin-bottom: 1rem;
-        }
         section > div {
           display: grid;
           grid-gap: 1rem;

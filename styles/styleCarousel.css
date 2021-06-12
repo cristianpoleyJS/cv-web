@@ -1,0 +1,9 @@
+.control-dots {
+    bottom: -6px !important;
+}
+.control-dots > li {
+    background: var(--palette--secondary-brand-color) !important;
+    box-shadow: none !important;
+    height: 12px !important;
+    width: 12px !important;
+}
