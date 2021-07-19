@@ -9,7 +9,9 @@ import globalStyles from 'styles'
 
 export default function App ({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true
+    })
   }, [])
   return (
     <>
