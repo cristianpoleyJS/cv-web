@@ -3,11 +3,18 @@ import IngeniovaSystemsIcon from 'components/Icons/IngeniovaSystemsIcon'
 import SngularIcon from 'components/Icons/SngularIcon'
 import SopraSteriaIcon from 'components/Icons/SopraSteriaIcon'
 import WellnessTelecomIcon from 'components/Icons/WellnessTelecomIcon'
+import AbacumIcon from 'components/Icons/AbacumIcon'
 
 export default function Jobs () {
   return (
     <>
       <section id="jobs">
+        <span>
+          <AbacumIcon
+            fill="#b3b3b3"
+            width={rem(140)}
+            height={rem(40)}/>
+        </span>
         <span>
           <SngularIcon
             fill="#b3b3b3"
@@ -36,9 +43,9 @@ export default function Jobs () {
       <style jsx>{`
           section {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: ${rem(10)};
-            grid-auto-rows: minmax(${rem(100)}, auto);
+            grid-auto-rows: minmax(${rem(60)}, auto);
             padding: 3rem 0;
             align-items: center;
           }
