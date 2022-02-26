@@ -14,7 +14,7 @@ export default function FooterApp () {
             <strong>cristianpoleygonzalez@gmail.com</strong>
           </div>
           <div className="footer__right">
-            2021 © Cristian Poley
+            {new Date().getFullYear()} © Cristian Poley
           </div>
         </section>
       </footer>
