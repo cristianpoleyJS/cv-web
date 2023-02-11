@@ -8,13 +8,16 @@ export default function AppLayout ({ children }) {
     <>
       <main>
         <Head>
-            <title>Cristian Poley</title>
-            <link rel="icon" href="/favicon.ico" />
-            <meta name="viewport" content="width=device-width"/>
-            <meta name="Description" content="This is my personal website to know my professional profile and my latest news."></meta>
+          <title>Cristian Poley</title>
+          <link rel="icon" href="/favicon.ico" />
+          <meta name="viewport" content="width=device-width" />
+          <meta
+            name="Description"
+            content="This is my personal website to know my professional profile."
+          ></meta>
         </Head>
         <HeaderApp />
-          {children}
+        {children}
         <FooterApp />
       </main>
       <style jsx>{`
