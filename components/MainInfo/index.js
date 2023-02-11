@@ -15,21 +15,28 @@ export default function MainInfo () {
               nextStringDelay: 3000,
               speed: 60,
               startDelay: 500,
-              strings: ['Senior Front-end', 'Software Engineer', 'JavaScript Lover'],
+              strings: [
+                'Senior Front-end Engineer',
+                'Software Engineer',
+                'JavaScript Lover'
+              ],
               waitUntilVisible: true
             }}
           />
           <a
             href="https://storage.googleapis.com/cristian-poley-webs.appspot.com/CristianPoleyCV.pdf"
             target="_blank"
-            rel="noreferrer">
-            <button className="primary-button">
-              Descargar CV
-            </button>
+            rel="noreferrer"
+          >
+            <button className="primary-button">Download CV</button>
           </a>
         </div>
         <div className="main-info__right">
-          <img src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.webp" decoding="async" loading="lazy" />
+          <img
+            src="https://storage.googleapis.com/cristian-poley-webs.appspot.com/iam.webp"
+            decoding="async"
+            loading="lazy"
+          />
         </div>
       </section>
       <style jsx>{`
