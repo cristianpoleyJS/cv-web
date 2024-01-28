@@ -3,7 +3,10 @@ import Airtable from 'airtable'
 export const getDataAirtable = async (baseKey, baseName) => {
   const res = []
   await new Promise((resolve) => {
-    const base = new Airtable({ apiKey: process.env.NEXT_PUBLIC_API_KEY_AIRTABLE }).base(baseKey)
+    const base = new Airtable({
+      endpointUrl: 'https://api.airtable.com',
+      apiKey: process.env.NEXT_PUBLIC_TOKEN_AIRTABLE
+    }).base(baseKey)
     base(baseName)
       .select({
         sort: [
