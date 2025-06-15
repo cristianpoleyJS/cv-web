@@ -1,0 +1,18 @@
+﻿[
+  {
+    "title": "vue-next-timeline",
+    "description": "With this component 🧰 you can add a timeline to your Vue3 application to indicate your achieved goals!",
+    "url": "https://www.npmjs.com/package/vue-next-timeline",
+    "tech": "JavaScript",
+    "count": "+1.3k",
+    "id": 1
+  },
+  {
+    "title": "vue-next-typeahead",
+    "description": "🔍 Search and choose from the endpoint results you indicate to the component.",
+    "url": "https://www.npmjs.com/package/vue-next-typeahead",
+    "tech": "JavaScript",
+    "count": "+1k",
+    "id": 2
+  }
+]

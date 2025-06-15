@@ -1,0 +1,50 @@
+﻿[
+  {
+    "title": "Shopping Cart",
+    "description": "A simple and easily scalable application to sell products and apply discounts in a physical store.",
+    "url": "https://shopping-cart-cryptos.netlify.app",
+    "photo": "https://storage.googleapis.com/cristian-poley-webs.appspot.com/portfolio/shopping-cart-cryptos.webp",
+    "technologies": ["Vue 3", "TypeScript", "Netlify"],
+    "id": 1
+  },
+  {
+    "title": "CryptoStatus",
+    "description": "In CyrptoStatus you can view, save as favorites and see the details of many cryptocurrencies.",
+    "url": "https://cryptostatus.vercel.app",
+    "photo": "https://storage.googleapis.com/cristian-poley-webs.appspot.com/portfolio/cryptostatus.webp",
+    "technologies": ["NuxtJS", "Lightweight Charts", "Vue Jest", "Vercel"],
+    "id": 2
+  },
+  {
+    "title": "ProsVsContras",
+    "description": "Are you hesitating to do one or the other? ProVSContras will help you make the best decision!",
+    "url": "https://prosvscontras.vercel.app/",
+    "photo": "https://storage.googleapis.com/cristian-poley-webs.appspot.com/portfolio/prosvscontras.webp",
+    "technologies": ["NextJS", "Styled JSX", "Vercel", "TailwindCSS"],
+    "id": 3
+  },
+  {
+    "title": "Calculator",
+    "description": "Calculator developed as a FrontendMentor challenge.",
+    "url": "https://calculator-frontendmentor.netlify.app",
+    "photo": "https://storage.googleapis.com/cristian-poley-webs.appspot.com/portfolio/calculator.webp",
+    "technologies": ["Vue 3", "Vite", "Netlify"],
+    "id": 4
+  },
+  {
+    "title": "Sunnyside",
+    "description": "Basic Landing as a FrontendMentor challenge.",
+    "url": "https://sunnyside-agency-landing-one.vercel.app",
+    "photo": "https://storage.googleapis.com/cristian-poley-webs.appspot.com/portfolio/sunnyside.webp",
+    "technologies": ["React", "Vite", "Vercel"],
+    "id": 5
+  },
+  {
+    "title": "Countdown",
+    "description": "Countdown counter as a FrontendMentor challenge.",
+    "url": "https://launch-countdown-timer-cristianpoleyjs.netlify.app/",
+    "photo": "https://storage.googleapis.com/cristian-poley-webs.appspot.com/portfolio/countdown.webp",
+    "technologies": ["Svelte", "Vite", "Netlify"],
+    "id": 6
+  }
+]

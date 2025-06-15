@@ -16,6 +16,7 @@ export default function MainInfo () {
               speed: 60,
               startDelay: 500,
               strings: [
+                'Engineering Manager',
                 'Senior Front-end Engineer',
                 'Software Engineer',
                 'JavaScript Lover'

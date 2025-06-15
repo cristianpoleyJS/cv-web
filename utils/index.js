@@ -1,28 +1,14 @@
-import Airtable from 'airtable'
-
-export const getDataAirtable = async (baseKey, baseName) => {
-  const res = []
-  await new Promise((resolve) => {
-    const base = new Airtable({
-      endpointUrl: 'https://api.airtable.com',
-      apiKey: process.env.NEXT_PUBLIC_TOKEN_AIRTABLE
-    }).base(baseKey)
-    base(baseName)
-      .select({
-        sort: [
-          { field: 'ID', direction: 'asc' }
-        ]
-      })
-      .firstPage((err, records) => {
-        if (err) { console.error(err); return }
-        records.forEach((record) => {
-          res.push({
-            id: record.id,
-            ...record.fields
-          })
-        })
-        resolve()
-      })
-  })
-  return res
+export const getData = async (key) => {
+  switch (key) {
+    case 'portfolio':
+      return (await import('../data/portfolio.json')).default
+    case 'articles':
+      return (await import('../data/articles.json')).default
+    case 'brief':
+      return (await import('../data/brief.json')).default
+    case 'libraries':
+      return (await import('../data/libraries.json')).default
+    default:
+      throw new Error(`Unknown data: ${key}`)
+  }
 }
